@@ -1,2 +1,3 @@
-# ByteDanceSummerCamp-
-电子科技大学字节跳动训练营
+# ByteDanceSummerCamp 电子科技大学字节跳动训练营
+
+请大家加入之后建立一个自己姓名的文件夹，每次更新代码文件直接提交到自己的目录下即可
