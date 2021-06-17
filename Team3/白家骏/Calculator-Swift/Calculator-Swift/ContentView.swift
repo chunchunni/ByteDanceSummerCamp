@@ -7,18 +7,38 @@
 
 import SwiftUI
 
+extension View {
+    func expandable () -> some View {
+        ZStack {
+            Color.clear
+            self
+        }
+        .background(Color.black)
+        .edgesIgnoringSafeArea(.all)
+    }
+}
+
 struct ContentView: View {
+    @State var result = cal.result
     var body: some View {
         let screenWidth = UIScreen.main.bounds.width
         let screenHeight = UIScreen.main.bounds.height
         
         VStack {
+            Spacer()
+            HStack {
+                Spacer()
+                Text("\(result)")
+                    .frame(height: 100, alignment: .center)
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+            }
             HStack {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("AC")
                         .foregroundColor(Color.black)
                 })
-                    .frame(width: screenWidth / 6, height: screenWidth / 4, alignment: .center)
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
                     .background(Color(.lightGray))
                     .clipShape(Circle())
                     .padding(5)
@@ -26,7 +46,7 @@ struct ContentView: View {
                     Text("+/-")
                         .foregroundColor(Color.black)
                 })
-                    .frame(width: screenWidth / 6, height: screenWidth / 4, alignment: .center)
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
                     .background(Color(.lightGray))
                     .clipShape(Circle())
                     .padding(5)
@@ -34,16 +54,16 @@ struct ContentView: View {
                     Text("%")
                         .foregroundColor(Color.black)
                 })
-                    .frame(width: screenWidth / 6, height: screenWidth / 4, alignment: .center)
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
                     .background(Color(.lightGray))
                     .clipShape(Circle())
                     .padding(5)
                 Button(action: {}, label: {
                     Text("÷")
-                        .foregroundColor(Color.black)
+                        .foregroundColor(.white)
                 })
-                .frame(width: screenWidth / 6, height: screenWidth / 4, alignment: .center)
-                .background(Color(.systemYellow))
+                .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                .background(Color(.sRGB, red: 255/255, green: 169/255, blue: 11/255))
                 .clipShape(Circle())
                 .padding(5)
             }
@@ -51,62 +71,160 @@ struct ContentView: View {
             HStack {
                 Button(action: {}, label: {
                     Text("7")
+                        .foregroundColor(.white)
                 })
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+                
                 Button(action: {}, label: {
                     Text("8")
+                        .foregroundColor(.white)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text("9")
+                        .foregroundColor(.white)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text("×")
+                        .foregroundColor(.white)
                 })
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.sRGB, red: 255/255, green: 169/255, blue: 11/255))
+                    .clipShape(Circle())
+                    .padding(5)
+
             }
             HStack {
                 Button(action: {}, label: {
                     Text("4")
+                        .foregroundColor(.white)
                 })
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
                 Button(action: {}, label: {
                     Text("5")
+                        .foregroundColor(.white)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text("6")
+                        .foregroundColor(.white)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text("-")
+                        .foregroundColor(.white)
                 })
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.sRGB, red: 255/255, green: 169/255, blue: 11/255))
+                    .clipShape(Circle())
+                    .padding(5)
+
             }
             HStack {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("1")
+                        .foregroundColor(.white)
                 })
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
                 Button(action: {}, label: {
                     Text("2")
+                        .foregroundColor(.white)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text("3")
+                        .foregroundColor(.white)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text("+")
+                        .foregroundColor(.white)
                 })
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.sRGB, red: 255/255, green: 169/255, blue: 11/255))
+                    .clipShape(Circle())
+                    .padding(5)
+
             }
             HStack {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("0")
+                    HStack {
+                        Text("0")
+                            .foregroundColor(.white)
+                            .padding(25)
+                        Spacer()
+                    }
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 2.5, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .cornerRadius(70)
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text(".")
+                        .foregroundColor(.white)
                 })
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.darkGray))
+                    .clipShape(Circle())
+                    .padding(5)
+
+                Button(action: {}, label: {
                     Text("=")
+                        .foregroundColor(.white)
                 })
+                    .frame(width: screenWidth / 6, height: screenWidth / 6, alignment: .center)
+                    .background(Color(.sRGB, red: 255/255, green: 169/255, blue: 11/255))
+                    .clipShape(Circle())
+                    .padding(5)
+
             }
         }
+        .font(.title3)
+        .expandable()
+
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            
     }
 }

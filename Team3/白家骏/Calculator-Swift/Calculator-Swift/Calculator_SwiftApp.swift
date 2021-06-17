@@ -12,6 +12,7 @@ class calculator {
     var b: Float
     var type: Character
     var dot: Character
+    var result: Float
     func work() -> Float {
         if(self.type == "+") {
             return self.a + self.b
@@ -29,15 +30,16 @@ class calculator {
             return 0
         }
     }
-    init(a: Float, b: Float, type: Character, dot: Character) {
+    init(a: Float, b: Float, type: Character, dot: Character, result: Float) {
         self.a = a
         self.b = b
         self.type = type
         self.dot = dot
+        self.result = result
     }
 }
 
-var cal = calculator(a: 0, b: 0, type: "?", dot: " ")
+var cal = calculator(a: 0, b: 0, type: "?", dot: " ", result: 0)
 
 @main
 struct Calculator_SwiftApp: App {
