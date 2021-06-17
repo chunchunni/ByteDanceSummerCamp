@@ -19,7 +19,7 @@ extension View {
 }
 
 struct ContentView: View {
-    @State var result = cal.result
+    @State var result = (cal.result == floor(cal.result) ? ("\(Int(cal.result))") : ("\(cal.result))"))
     var body: some View {
         let screenWidth = UIScreen.main.bounds.width
         let screenHeight = UIScreen.main.bounds.height

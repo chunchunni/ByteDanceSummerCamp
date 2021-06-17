@@ -8,12 +8,12 @@
 import SwiftUI
 
 class calculator {
-    var a: Float
-    var b: Float
+    var a: Double
+    var b: Double
     var type: Character
     var dot: Character
-    var result: Float
-    func work() -> Float {
+    var result: Double
+    func work() -> Double {
         if(self.type == "+") {
             return self.a + self.b
         }
@@ -30,7 +30,7 @@ class calculator {
             return 0
         }
     }
-    init(a: Float, b: Float, type: Character, dot: Character, result: Float) {
+    init(a: Double, b: Double, type: Character, dot: Character, result: Double) {
         self.a = a
         self.b = b
         self.type = type
