@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target "Weather" do
+pod "AFNetworking", "~> 2.0"
+pod "SwiftyJSON", "~> 4.0"
+
+end

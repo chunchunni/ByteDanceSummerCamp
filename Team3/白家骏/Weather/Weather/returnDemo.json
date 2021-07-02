@@ -1,0 +1,1287 @@
+{
+    city = "\U6210\U90fd";
+    cityEn = chengdu;
+    cityid = 101270101;
+    country = "\U4e2d\U56fd";
+    countryEn = China;
+    data =     (
+                {
+            air = 33;
+            "air_level" = "\U4f18";
+            "air_tips" = "\U7a7a\U6c14\U5f88\U597d\Uff0c\U53ef\U4ee5\U5916\U51fa\U6d3b\U52a8\Uff0c\U547c\U5438\U65b0\U9c9c\U7a7a\U6c14\Uff0c\U62e5\U62b1\U5927\U81ea\U7136\Uff01";
+            alarm =             {
+                "alarm_content" = "";
+                "alarm_level" = "";
+                "alarm_type" = "";
+            };
+            date = "2021-07-02";
+            day = "02\U65e5\Uff08\U661f\U671f\U4e94\Uff09";
+            hours =             (
+                                {
+                    hours = "19\U65f6";
+                    tem = 29;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "20\U65f6";
+                    tem = 25;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U897f\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "21\U65f6";
+                    tem = 24;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "22\U65f6";
+                    tem = 24;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "23\U65f6";
+                    tem = 23;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "00\U65f6";
+                    tem = 23;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "01\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "02\U65f6";
+                    tem = 22;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "03\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "04\U65f6";
+                    tem = 21;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "05\U65f6";
+                    tem = 21;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "06\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "07\U65f6";
+                    tem = 24;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                }
+            );
+            humidity = "71%";
+            index =             (
+                                {
+                    desc = "\U6d82\U64e6SPF\U5927\U4e8e15\U3001PA+\U9632\U6652\U62a4\U80a4\U54c1\U3002";
+                    level = "\U4e2d\U7b49";
+                    title = "\U7d2b\U5916\U7ebf\U6307\U6570";
+                },
+                                {
+                    desc = "\U590f\U5929\U6084\U7136\U5230\Uff0c\U8089\U5df2\U65e0\U5904\U85cf\U3002\U5929\U6c14\U8f83\U8212\U9002\Uff0c\U5feb\U53bb\U8fd0\U52a8\U5427\U3002";
+                    level = "\U4e94\U9897\U661f";
+                    title = "\U51cf\U80a5\U6307\U6570";
+                },
+                                {
+                    desc = "\U6c14\U6e29\U591a\U53d8\Uff0c\U8840\U7cd6\U6613\U6ce2\U52a8\Uff0c\U8bf7\U6ce8\U610f\U76d1\U6d4b\U3002";
+                    level = "\U6613\U6ce2\U52a8";
+                    title = "\U8840\U7cd6\U6307\U6570";
+                },
+                                {
+                    desc = "\U9002\U5408\U7a7fT\U6064\U3001\U77ed\U8584\U5916\U5957\U7b49\U590f\U5b63\U670d\U88c5\U3002";
+                    level = "\U70ed";
+                    title = "\U7a7f\U8863\U6307\U6570";
+                },
+                                {
+                    desc = "\U6709\U96e8\Uff0c\U96e8\U6c34\U548c\U6ce5\U6c34\U4f1a\U5f04\U810f\U7231\U8f66\U3002";
+                    level = "\U4e0d\U5b9c";
+                    title = "\U6d17\U8f66\U6307\U6570";
+                },
+                                {
+                    desc = "\U6613\U611f\U4eba\U7fa4\U5e94\U9002\U5f53\U51cf\U5c11\U5ba4\U5916\U6d3b\U52a8\U3002";
+                    level = "\U4e2d";
+                    title = "\U7a7a\U6c14\U6c61\U67d3\U6269\U6563\U6307\U6570";
+                }
+            );
+            pressure = 945;
+            sunrise = "06:05";
+            sunset = "20:10";
+            tem = "27\U2103";
+            tem1 = "28\U2103";
+            tem2 = "20\U2103";
+            visibility = 18km;
+            wea = "\U9634";
+            "wea_day" = "\U9634";
+            "wea_day_img" = yin;
+            "wea_img" = yin;
+            "wea_night" = "\U9634";
+            "wea_night_img" = yin;
+            week = "\U661f\U671f\U4e94";
+            win =             (
+                "\U5317\U98ce",
+                "\U65e0\U6301\U7eed\U98ce\U5411"
+            );
+            "win_meter" = "4km/h";
+            "win_speed" = "3-4\U7ea7\U8f6c<3\U7ea7";
+        },
+                {
+            air = 37;
+            "air_level" = "\U4f18";
+            "air_tips" = "";
+            alarm =             {
+                "alarm_content" = "";
+                "alarm_level" = "";
+                "alarm_type" = "";
+            };
+            date = "2021-07-03";
+            day = "03\U65e5\Uff08\U661f\U671f\U516d\Uff09";
+            hours =             (
+                                {
+                    hours = "08\U65f6";
+                    tem = 23;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "09\U65f6";
+                    tem = 25;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "10\U65f6";
+                    tem = 26;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "11\U65f6";
+                    tem = 28;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U897f\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "12\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "13\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "14\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U897f\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "15\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "16\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "17\U65f6";
+                    tem = 33;
+                    wea = "\U6674";
+                    "wea_img" = qing;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "18\U65f6";
+                    tem = 32;
+                    wea = "\U6674";
+                    "wea_img" = qing;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "19\U65f6";
+                    tem = 30;
+                    wea = "\U6674";
+                    "wea_img" = qing;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "20\U65f6";
+                    tem = 28;
+                    wea = "\U6674";
+                    "wea_img" = qing;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "21\U65f6";
+                    tem = 27;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "22\U65f6";
+                    tem = 27;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "23\U65f6";
+                    tem = 24;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "00\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "01\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "02\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "03\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "04\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "05\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "06\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "07\U65f6";
+                    tem = 22;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                }
+            );
+            humidity = "";
+            index =             (
+                                {
+                    desc = "\U6d82\U64e6SPF\U5927\U4e8e15\U3001PA+\U9632\U6652\U62a4\U80a4\U54c1\U3002";
+                    level = "\U4e2d\U7b49";
+                    title = "\U7d2b\U5916\U7ebf\U6307\U6570";
+                },
+                                {
+                    desc = "\U590f\U5929\U6084\U7136\U5230\Uff0c\U8089\U5df2\U65e0\U5904\U85cf\U3002\U5929\U6c14\U8f83\U8212\U9002\Uff0c\U5feb\U53bb\U8fd0\U52a8\U5427\U3002";
+                    level = "\U4e94\U9897\U661f";
+                    title = "\U51cf\U80a5\U6307\U6570";
+                },
+                                {
+                    desc = "\U8840\U7cd6\U6613\U6ce2\U52a8\Uff0c\U6ce8\U610f\U76d1\U6d4b\U3002";
+                    level = "\U6613\U6ce2\U52a8";
+                    title = "\U8840\U7cd6\U6307\U6570";
+                },
+                                {
+                    desc = "\U9002\U5408\U7a7fT\U6064\U3001\U77ed\U8584\U5916\U5957\U7b49\U590f\U5b63\U670d\U88c5\U3002";
+                    level = "\U70ed";
+                    title = "\U7a7f\U8863\U6307\U6570";
+                },
+                                {
+                    desc = "\U5929\U6c14\U8f83\U597d\Uff0c\U9002\U5408\U64e6\U6d17\U6c7d\U8f66\U3002";
+                    level = "\U9002\U5b9c";
+                    title = "\U6d17\U8f66\U6307\U6570";
+                },
+                                {
+                    desc = "\U6613\U611f\U4eba\U7fa4\U5e94\U9002\U5f53\U51cf\U5c11\U5ba4\U5916\U6d3b\U52a8\U3002";
+                    level = "\U4e2d";
+                    title = "\U7a7a\U6c14\U6c61\U67d3\U6269\U6563\U6307\U6570";
+                }
+            );
+            pressure = "";
+            sunrise = "06:05";
+            sunset = "20:10";
+            tem = "34\U2103";
+            tem1 = "34\U2103";
+            tem2 = "22\U2103";
+            visibility = "";
+            wea = "\U591a\U4e91\U8f6c\U9634";
+            "wea_day" = "\U591a\U4e91";
+            "wea_day_img" = yun;
+            "wea_img" = yun;
+            "wea_night" = "\U9634";
+            "wea_night_img" = yin;
+            week = "\U661f\U671f\U516d";
+            win =             (
+                "\U65e0\U6301\U7eed\U98ce\U5411",
+                "\U65e0\U6301\U7eed\U98ce\U5411"
+            );
+            "win_meter" = "";
+            "win_speed" = "<3\U7ea7";
+        },
+                {
+            air = 46;
+            "air_level" = "\U4f18";
+            "air_tips" = "";
+            alarm =             {
+                "alarm_content" = "";
+                "alarm_level" = "";
+                "alarm_type" = "";
+            };
+            date = "2021-07-04";
+            day = "04\U65e5\Uff08\U661f\U671f\U65e5\Uff09";
+            hours =             (
+                                {
+                    hours = "08\U65f6";
+                    tem = 23;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "09\U65f6";
+                    tem = 25;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U897f\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "10\U65f6";
+                    tem = 25;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "11\U65f6";
+                    tem = 29;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "12\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "13\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "14\U65f6";
+                    tem = 33;
+                    wea = "\U6674";
+                    "wea_img" = qing;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "15\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "16\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "17\U65f6";
+                    tem = 33;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "18\U65f6";
+                    tem = 29;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "19\U65f6";
+                    tem = 29;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "20\U65f6";
+                    tem = 27;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "21\U65f6";
+                    tem = 27;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "22\U65f6";
+                    tem = 27;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "23\U65f6";
+                    tem = 27;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "00\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "01\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "02\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "03\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "04\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "05\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "06\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "07\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                }
+            );
+            humidity = "";
+            index =             (
+                                {
+                    desc = "\U8f90\U5c04\U5f31\Uff0c\U6d82\U64e6SPF8-12\U9632\U6652\U62a4\U80a4\U54c1\U3002";
+                    level = "\U6700\U5f31";
+                    title = "\U7d2b\U5916\U7ebf\U6307\U6570";
+                },
+                                {
+                    desc = "\U590f\U5929\U6084\U7136\U5230\Uff0c\U8089\U5df2\U65e0\U5904\U85cf\U3002\U5929\U6c14\U8f83\U8212\U9002\Uff0c\U5feb\U53bb\U8fd0\U52a8\U5427\U3002";
+                    level = "\U4e94\U9897\U661f";
+                    title = "\U51cf\U80a5\U6307\U6570";
+                },
+                                {
+                    desc = "\U8840\U7cd6\U6613\U6ce2\U52a8\Uff0c\U6ce8\U610f\U76d1\U6d4b\U3002";
+                    level = "\U6613\U6ce2\U52a8";
+                    title = "\U8840\U7cd6\U6307\U6570";
+                },
+                                {
+                    desc = "\U5efa\U8bae\U7a7f\U957f\U8896\U886c\U886b\U5355\U88e4\U7b49\U670d\U88c5\U3002";
+                    level = "\U8212\U9002";
+                    title = "\U7a7f\U8863\U6307\U6570";
+                },
+                                {
+                    desc = "\U5929\U6c14\U8f83\U597d\Uff0c\U9002\U5408\U64e6\U6d17\U6c7d\U8f66\U3002";
+                    level = "\U9002\U5b9c";
+                    title = "\U6d17\U8f66\U6307\U6570";
+                },
+                                {
+                    desc = "\U6c14\U8c61\U6761\U4ef6\U8f83\U4e0d\U5229\U4e8e\U7a7a\U6c14\U6c61\U67d3\U7269\U6269\U6563\U3002\U3002";
+                    level = "\U8f83\U5dee";
+                    title = "\U7a7a\U6c14\U6c61\U67d3\U6269\U6563\U6307\U6570";
+                }
+            );
+            pressure = "";
+            sunrise = "06:05";
+            sunset = "20:10";
+            tem = "34\U2103";
+            tem1 = "34\U2103";
+            tem2 = "24\U2103";
+            visibility = "";
+            wea = "\U591a\U4e91\U8f6c\U9635\U96e8";
+            "wea_day" = "\U591a\U4e91";
+            "wea_day_img" = yun;
+            "wea_img" = yun;
+            "wea_night" = "\U9635\U96e8";
+            "wea_night_img" = yu;
+            week = "\U661f\U671f\U65e5";
+            win =             (
+                "\U65e0\U6301\U7eed\U98ce\U5411",
+                "\U65e0\U6301\U7eed\U98ce\U5411"
+            );
+            "win_meter" = "";
+            "win_speed" = "<3\U7ea7";
+        },
+                {
+            air = 41;
+            "air_level" = "\U4f18";
+            "air_tips" = "";
+            alarm =             {
+                "alarm_content" = "";
+                "alarm_level" = "";
+                "alarm_type" = "";
+            };
+            date = "2021-07-05";
+            day = "05\U65e5\Uff08\U661f\U671f\U4e00\Uff09";
+            hours =             (
+                                {
+                    hours = "08\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "09\U65f6";
+                    tem = 26;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "10\U65f6";
+                    tem = 27;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "11\U65f6";
+                    tem = 27;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "12\U65f6";
+                    tem = 30;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "13\U65f6";
+                    tem = 30;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "14\U65f6";
+                    tem = 30;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "15\U65f6";
+                    tem = 31;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "16\U65f6";
+                    tem = 31;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "17\U65f6";
+                    tem = 32;
+                    wea = "\U591a\U4e91";
+                    "wea_img" = yun;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "18\U65f6";
+                    tem = 31;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "19\U65f6";
+                    tem = 31;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "20\U65f6";
+                    tem = 30;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "23\U65f6";
+                    tem = 26;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "02\U65f6";
+                    tem = 25;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "05\U65f6";
+                    tem = 24;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                }
+            );
+            humidity = "";
+            index =             (
+                                {
+                    desc = "\U6d82\U64e6SPF\U5927\U4e8e15\U3001PA+\U9632\U6652\U62a4\U80a4\U54c1\U3002";
+                    level = "\U4e2d\U7b49";
+                    title = "\U7d2b\U5916\U7ebf\U6307\U6570";
+                },
+                                {
+                    desc = "\U590f\U5929\U6084\U7136\U5230\Uff0c\U8089\U5df2\U65e0\U5904\U85cf\U3002\U5929\U6c14\U8f83\U8212\U9002\Uff0c\U5feb\U53bb\U8fd0\U52a8\U5427\U3002";
+                    level = "\U4e94\U9897\U661f";
+                    title = "\U51cf\U80a5\U6307\U6570";
+                },
+                                {
+                    desc = "\U8840\U7cd6\U6613\U6ce2\U52a8\Uff0c\U6ce8\U610f\U76d1\U6d4b\U3002";
+                    level = "\U6613\U6ce2\U52a8";
+                    title = "\U8840\U7cd6\U6307\U6570";
+                },
+                                {
+                    desc = "\U9002\U5408\U7a7fT\U6064\U3001\U77ed\U8584\U5916\U5957\U7b49\U590f\U5b63\U670d\U88c5\U3002";
+                    level = "\U70ed";
+                    title = "\U7a7f\U8863\U6307\U6570";
+                },
+                                {
+                    desc = "\U5929\U6c14\U8f83\U597d\Uff0c\U9002\U5408\U64e6\U6d17\U6c7d\U8f66\U3002";
+                    level = "\U9002\U5b9c";
+                    title = "\U6d17\U8f66\U6307\U6570";
+                },
+                                {
+                    desc = "\U6613\U611f\U4eba\U7fa4\U5e94\U9002\U5f53\U51cf\U5c11\U5ba4\U5916\U6d3b\U52a8\U3002";
+                    level = "\U4e2d";
+                    title = "\U7a7a\U6c14\U6c61\U67d3\U6269\U6563\U6307\U6570";
+                }
+            );
+            pressure = "";
+            sunrise = "06:06";
+            sunset = "20:10";
+            tem = "32\U2103";
+            tem1 = "32\U2103";
+            tem2 = "23\U2103";
+            visibility = "";
+            wea = "\U9634\U8f6c\U5c0f\U96e8";
+            "wea_day" = "\U9634";
+            "wea_day_img" = yin;
+            "wea_img" = yu;
+            "wea_night" = "\U5c0f\U96e8";
+            "wea_night_img" = yu;
+            week = "\U661f\U671f\U4e00";
+            win =             (
+                "\U65e0\U6301\U7eed\U98ce\U5411",
+                "\U65e0\U6301\U7eed\U98ce\U5411"
+            );
+            "win_meter" = "";
+            "win_speed" = "<3\U7ea7";
+        },
+                {
+            air = 35;
+            "air_level" = "\U4f18";
+            "air_tips" = "";
+            alarm =             {
+                "alarm_content" = "";
+                "alarm_level" = "";
+                "alarm_type" = "";
+            };
+            date = "2021-07-06";
+            day = "06\U65e5\Uff08\U661f\U671f\U4e8c\Uff09";
+            hours =             (
+                                {
+                    hours = "08\U65f6";
+                    tem = 23;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "11\U65f6";
+                    tem = 27;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "14\U65f6";
+                    tem = 30;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "17\U65f6";
+                    tem = 30;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "20\U65f6";
+                    tem = 27;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "23\U65f6";
+                    tem = 25;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U897f\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "02\U65f6";
+                    tem = 24;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U897f\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "05\U65f6";
+                    tem = 24;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                }
+            );
+            humidity = "";
+            index =             (
+                                {
+                    desc = "\U6d82\U64e6SPF\U5927\U4e8e15\U3001PA+\U9632\U6652\U62a4\U80a4\U54c1\U3002";
+                    level = "\U4e2d\U7b49";
+                    title = "\U7d2b\U5916\U7ebf\U6307\U6570";
+                },
+                                {
+                    desc = "\U590f\U5929\U6084\U7136\U5230\Uff0c\U8089\U5df2\U65e0\U5904\U85cf\U3002\U5929\U6c14\U8f83\U8212\U9002\Uff0c\U5feb\U53bb\U8fd0\U52a8\U5427\U3002";
+                    level = "\U4e09\U9897\U661f";
+                    title = "\U51cf\U80a5\U6307\U6570";
+                },
+                                {
+                    desc = "\U8840\U7cd6\U6613\U6ce2\U52a8\Uff0c\U6ce8\U610f\U76d1\U6d4b\U3002";
+                    level = "\U6613\U6ce2\U52a8";
+                    title = "\U8840\U7cd6\U6307\U6570";
+                },
+                                {
+                    desc = "\U9002\U5408\U7a7fT\U6064\U3001\U77ed\U8584\U5916\U5957\U7b49\U590f\U5b63\U670d\U88c5\U3002";
+                    level = "\U70ed";
+                    title = "\U7a7f\U8863\U6307\U6570";
+                },
+                                {
+                    desc = "\U5929\U6c14\U8f83\U597d\Uff0c\U9002\U5408\U64e6\U6d17\U6c7d\U8f66\U3002";
+                    level = "\U9002\U5b9c";
+                    title = "\U6d17\U8f66\U6307\U6570";
+                },
+                                {
+                    desc = "\U6613\U611f\U4eba\U7fa4\U5e94\U9002\U5f53\U51cf\U5c11\U5ba4\U5916\U6d3b\U52a8\U3002";
+                    level = "\U4e2d";
+                    title = "\U7a7a\U6c14\U6c61\U67d3\U6269\U6563\U6307\U6570";
+                }
+            );
+            pressure = "";
+            sunrise = "06:06";
+            sunset = "20:10";
+            tem = "30\U2103";
+            tem1 = "30\U2103";
+            tem2 = "23\U2103";
+            visibility = "";
+            wea = "\U5c0f\U96e8";
+            "wea_day" = "\U5c0f\U96e8";
+            "wea_day_img" = yu;
+            "wea_img" = yu;
+            "wea_night" = "\U5c0f\U96e8";
+            "wea_night_img" = yu;
+            week = "\U661f\U671f\U4e8c";
+            win =             (
+                "\U65e0\U6301\U7eed\U98ce\U5411",
+                "\U65e0\U6301\U7eed\U98ce\U5411"
+            );
+            "win_meter" = "";
+            "win_speed" = "<3\U7ea7";
+        },
+                {
+            air = 38;
+            "air_level" = "\U4f18";
+            "air_tips" = "";
+            alarm =             {
+                "alarm_content" = "";
+                "alarm_level" = "";
+                "alarm_type" = "";
+            };
+            date = "2021-07-07";
+            day = "07\U65e5\Uff08\U661f\U671f\U4e09\Uff09";
+            hours =             (
+                                {
+                    hours = "08\U65f6";
+                    tem = 24;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U897f\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "11\U65f6";
+                    tem = 27;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "14\U65f6";
+                    tem = 30;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "17\U65f6";
+                    tem = 29;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "20\U65f6";
+                    tem = 28;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U897f\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "23\U65f6";
+                    tem = 23;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "02\U65f6";
+                    tem = 23;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5357\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "05\U65f6";
+                    tem = 23;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                }
+            );
+            humidity = "";
+            index =             (
+                                {
+                    desc = "\U6d82\U64e6SPF\U5927\U4e8e15\U3001PA+\U9632\U6652\U62a4\U80a4\U54c1\U3002";
+                    level = "\U4e2d\U7b49";
+                    title = "\U7d2b\U5916\U7ebf\U6307\U6570";
+                },
+                                {
+                    desc = "\U590f\U5929\U6084\U7136\U5230\Uff0c\U8089\U5df2\U65e0\U5904\U85cf\U3002\U5929\U6c14\U8f83\U8212\U9002\Uff0c\U5feb\U53bb\U8fd0\U52a8\U5427\U3002";
+                    level = "\U4e09\U9897\U661f";
+                    title = "\U51cf\U80a5\U6307\U6570";
+                },
+                                {
+                    desc = "\U8840\U7cd6\U6613\U6ce2\U52a8\Uff0c\U6ce8\U610f\U76d1\U6d4b\U3002";
+                    level = "\U6613\U6ce2\U52a8";
+                    title = "\U8840\U7cd6\U6307\U6570";
+                },
+                                {
+                    desc = "\U9002\U5408\U7a7fT\U6064\U3001\U77ed\U8584\U5916\U5957\U7b49\U590f\U5b63\U670d\U88c5\U3002";
+                    level = "\U70ed";
+                    title = "\U7a7f\U8863\U6307\U6570";
+                },
+                                {
+                    desc = "\U5929\U6c14\U8f83\U597d\Uff0c\U9002\U5408\U64e6\U6d17\U6c7d\U8f66\U3002";
+                    level = "\U9002\U5b9c";
+                    title = "\U6d17\U8f66\U6307\U6570";
+                },
+                                {
+                    desc = "\U6613\U611f\U4eba\U7fa4\U5e94\U9002\U5f53\U51cf\U5c11\U5ba4\U5916\U6d3b\U52a8\U3002";
+                    level = "\U4e2d";
+                    title = "\U7a7a\U6c14\U6c61\U67d3\U6269\U6563\U6307\U6570";
+                }
+            );
+            pressure = "";
+            sunrise = "06:07";
+            sunset = "20:10";
+            tem = "30\U2103";
+            tem1 = "30\U2103";
+            tem2 = "23\U2103";
+            visibility = "";
+            wea = "\U5c0f\U96e8";
+            "wea_day" = "\U5c0f\U96e8";
+            "wea_day_img" = yu;
+            "wea_img" = yu;
+            "wea_night" = "\U5c0f\U96e8";
+            "wea_night_img" = yu;
+            week = "\U661f\U671f\U4e09";
+            win =             (
+                "\U65e0\U6301\U7eed\U98ce\U5411",
+                "\U65e0\U6301\U7eed\U98ce\U5411"
+            );
+            "win_meter" = "";
+            "win_speed" = "<3\U7ea7";
+        },
+                {
+            air = 26;
+            "air_level" = "\U4f18";
+            "air_tips" = "";
+            alarm =             {
+                "alarm_content" = "";
+                "alarm_level" = "";
+                "alarm_type" = "";
+            };
+            date = "2021-07-08";
+            day = "08\U65e5\Uff08\U661f\U671f\U56db\Uff09";
+            hours =             (
+                                {
+                    hours = "08\U65f6";
+                    tem = 23;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "11\U65f6";
+                    tem = 26;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "14\U65f6";
+                    tem = 29;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "17\U65f6";
+                    tem = 29;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "20\U65f6";
+                    tem = 28;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "23\U65f6";
+                    tem = 27;
+                    wea = "\U5c0f\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "02\U65f6";
+                    tem = 27;
+                    wea = "\U9634";
+                    "wea_img" = yin;
+                    win = "\U4e1c\U5317\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                },
+                                {
+                    hours = "05\U65f6";
+                    tem = 26;
+                    wea = "\U4e2d\U96e8";
+                    "wea_img" = yu;
+                    win = "\U4e1c\U98ce";
+                    "win_speed" = "<3\U7ea7";
+                }
+            );
+            humidity = "";
+            index =             (
+                                {
+                    desc = "\U8f90\U5c04\U5f31\Uff0c\U6d82\U64e6SPF8-12\U9632\U6652\U62a4\U80a4\U54c1\U3002";
+                    level = "\U6700\U5f31";
+                    title = "\U7d2b\U5916\U7ebf\U6307\U6570";
+                },
+                                {
+                    desc = "\U590f\U5929\U6084\U7136\U5230\Uff0c\U8089\U5df2\U65e0\U5904\U85cf\U3002\U5929\U6c14\U8f83\U8212\U9002\Uff0c\U5feb\U53bb\U8fd0\U52a8\U5427\U3002";
+                    level = "\U4e94\U9897\U661f";
+                    title = "\U51cf\U80a5\U6307\U6570";
+                },
+                                {
+                    desc = "\U8840\U7cd6\U6613\U6ce2\U52a8\Uff0c\U6ce8\U610f\U76d1\U6d4b\U3002";
+                    level = "\U6613\U6ce2\U52a8";
+                    title = "\U8840\U7cd6\U6307\U6570";
+                },
+                                {
+                    desc = "\U9002\U5408\U7a7fT\U6064\U3001\U77ed\U8584\U5916\U5957\U7b49\U590f\U5b63\U670d\U88c5\U3002";
+                    level = "\U70ed";
+                    title = "\U7a7f\U8863\U6307\U6570";
+                },
+                                {
+                    desc = "\U5929\U6c14\U8f83\U597d\Uff0c\U9002\U5408\U64e6\U6d17\U6c7d\U8f66\U3002";
+                    level = "\U9002\U5b9c";
+                    title = "\U6d17\U8f66\U6307\U6570";
+                },
+                                {
+                    desc = "\U6613\U611f\U4eba\U7fa4\U5e94\U9002\U5f53\U51cf\U5c11\U5ba4\U5916\U6d3b\U52a8\U3002";
+                    level = "\U4e2d";
+                    title = "\U7a7a\U6c14\U6c61\U67d3\U6269\U6563\U6307\U6570";
+                }
+            );
+            pressure = "";
+            sunrise = "06:07";
+            sunset = "20:09";
+            tem = "30\U2103";
+            tem1 = "30\U2103";
+            tem2 = "23\U2103";
+            visibility = "";
+            wea = "\U5c0f\U96e8";
+            "wea_day" = "\U5c0f\U96e8";
+            "wea_day_img" = yu;
+            "wea_img" = yu;
+            "wea_night" = "\U5c0f\U96e8";
+            "wea_night_img" = yu;
+            week = "\U661f\U671f\U56db";
+            win =             (
+                "\U65e0\U6301\U7eed\U98ce\U5411",
+                "\U65e0\U6301\U7eed\U98ce\U5411"
+            );
+            "win_meter" = "";
+            "win_speed" = "<3\U7ea7";
+        }
+    );
+    "update_time" = "2021-07-02 19:07:56";
+})
