@@ -18,6 +18,7 @@
 		533F1CB6268EAA3200FED489 /* SampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1CB5268EAA3200FED489 /* SampleAppTests.m */; };
 		533F1CC1268EAA3200FED489 /* SampleAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1CC0268EAA3200FED489 /* SampleAppUITests.m */; };
 		533F1CCF268ED98500FED489 /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 533F1CCE268ED98500FED489 /* icon */; };
+		533F1CD32692D46400FED489 /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1CD22692D46400FED489 /* GTVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		533F1CC0268EAA3200FED489 /* SampleAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleAppUITests.m; sourceTree = "<group>"; };
 		533F1CC2268EAA3200FED489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		533F1CCE268ED98500FED489 /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
+		533F1CD12692D46400FED489 /* GTVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoViewController.h; sourceTree = "<group>"; };
+		533F1CD22692D46400FED489 /* GTVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				533F1CAA268EAA3200FED489 /* Info.plist */,
 				533F1CAB268EAA3200FED489 /* main.m */,
 				533F1CA2268EAA3100FED489 /* SampleApp.xcdatamodeld */,
+				533F1CD12692D46400FED489 /* GTVideoViewController.h */,
+				533F1CD22692D46400FED489 /* GTVideoViewController.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				533F1CA4268EAA3100FED489 /* SampleApp.xcdatamodeld in Sources */,
 				533F1C98268EAA3100FED489 /* AppDelegate.m in Sources */,
 				533F1C9B268EAA3100FED489 /* SceneDelegate.m in Sources */,
+				533F1CD32692D46400FED489 /* GTVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
