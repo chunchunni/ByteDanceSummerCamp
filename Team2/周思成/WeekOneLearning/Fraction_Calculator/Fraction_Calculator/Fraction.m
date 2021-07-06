@@ -13,6 +13,18 @@
 
 @synthesize numerator,denominator;
 
+// 增加被除数的初始化
+-(id)init
+{
+    self = [super init];
+    
+    if(self){
+        denominator = 1;
+    }
+    
+    return self;
+}
+
 -(void) setTo:(int)n over:(int)d
 {
     numerator = n;
