@@ -36,10 +36,46 @@
     display.text = displayString;
 }
 
-- (IBAction) clickDigit: (UIButton *) sender
+
+- (IBAction) clickButton0
 {
-    long int digit = sender.tag;
-    [self processDigit: digit];
+    [self processDigit: 0];
+}
+- (IBAction) clickButton1
+{
+    [self processDigit: 1];
+}
+- (IBAction) clickButton2
+{
+    [self processDigit: 2];
+}
+- (IBAction) clickButton3
+{
+    [self processDigit: 3];
+}
+- (IBAction) clickButton4
+{
+    [self processDigit: 4];
+}
+- (IBAction) clickButton5
+{
+    [self processDigit: 5];
+}
+- (IBAction) clickButton6
+{
+    [self processDigit: 6];
+}
+- (IBAction) clickButton7
+{
+    [self processDigit: 7];
+}
+- (IBAction) clickButton8
+{
+    [self processDigit: 8];
+}
+- (IBAction) clickButton9
+{
+    [self processDigit: 9];
 }
 
 - (void) processOp: (char) theOp

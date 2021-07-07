@@ -27,7 +27,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIz-Ra-TBj"/>
+                                    <action selector="clickButton0" destination="BYZ-38-t0r" eventType="touchUpInside" id="WdH-Dj-BfK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjO-xM-vu4">
@@ -70,7 +70,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdC-Zd-skF"/>
+                                    <action selector="clickButton1" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kc7-c1-Mjl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-uQ-k1i">
@@ -82,7 +82,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mPG-XM-AKV"/>
+                                    <action selector="clickButton2" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJz-OO-2UU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTf-5h-kgg">
@@ -100,7 +100,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="doq-UU-Rku"/>
+                                    <action selector="clickButton3" destination="BYZ-38-t0r" eventType="touchUpInside" id="wG8-3x-gsC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi2-19-XY9">
@@ -112,7 +112,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNg-L8-Xaf"/>
+                                    <action selector="clickButton5" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYS-d8-3Ka"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-2w-PWs">
@@ -124,7 +124,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q33-jz-EP9"/>
+                                    <action selector="clickButton6" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwf-nH-PYN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SN-Zo-1sx">
@@ -136,7 +136,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43M-aE-ZWo"/>
+                                    <action selector="clickButton7" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxp-dF-RoV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRq-zf-X3f">
@@ -148,7 +148,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cnf-s2-o4Q"/>
+                                    <action selector="clickButton8" destination="BYZ-38-t0r" eventType="touchUpInside" id="vqk-kS-BgN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I35-wh-to7">
@@ -160,7 +160,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEu-Uh-nQ0"/>
+                                    <action selector="clickButton9" destination="BYZ-38-t0r" eventType="touchUpInside" id="LM8-jK-zkG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nW-Ca-fWU">
@@ -232,7 +232,7 @@
                                     <color key="titleShadowColor" red="0.92553013559999997" green="0.33336965930000001" blue="0.26277678729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1uI-e7-Eih"/>
+                                    <action selector="clickButton4" destination="BYZ-38-t0r" eventType="touchUpInside" id="LN6-2w-X4V"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -17,7 +17,16 @@
 -(void)storeFracPart;
 
 //数字键
--(IBAction)clickDigit:(UIButton *)sender;
+-(IBAction) clickButton0;
+-(IBAction) clickButton1;
+-(IBAction) clickButton2;
+-(IBAction) clickButton3;
+-(IBAction) clickButton4;
+-(IBAction) clickButton5;
+-(IBAction) clickButton6;
+-(IBAction) clickButton7;
+-(IBAction) clickButton8;
+-(IBAction) clickButton9;
 
 //算术操作键
 -(IBAction) clickPlus;
