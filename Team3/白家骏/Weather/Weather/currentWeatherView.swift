@@ -16,6 +16,13 @@ struct currentWeatherView: View {
                     InfoBlock(title: "Weather", info: "\(reInfo.data.wea)", img: nil, tips: nil)
                     InfoBlock(title: "Temperature", info: "\(reInfo.data.tem)", img: nil, tips: nil)
                     InfoBlock(title: "Temp Range", info: "\(reInfo.data.tem2) ~ \(reInfo.data.tem1)", img: nil, tips: nil)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(0..<7) { i in
+                                InfoBlockHori(hours: reInfo.data.hours[i].hours, tem: reInfo.data.hours[i].tem, wea_img: UIImage(named: reInfo.data.hours[i].wea_img))
+                            }
+                        }
+                    }
                     InfoBlock(title: "Humidity", info: "\(reInfo.data.humidity)", img: nil, tips: nil)
                     InfoBlock(title: "Air Quality", info: "(AQI) \(reInfo.data.air)   \(reInfo.data.air_level)", img: nil, tips: "Air Tips: \(reInfo.data.air_tips)")
                     InfoBlock(title: "Visibility", info: "\(reInfo.data.visibility)", img: nil, tips: nil)

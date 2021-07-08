@@ -9,7 +9,6 @@
 #define calculator_h
 
 #import <Foundation/Foundation.h>
-#import "calculator.h"
 
 @interface calculator : NSObject
 

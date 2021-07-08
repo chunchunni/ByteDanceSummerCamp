@@ -63,6 +63,22 @@ struct InfoBlockSmall: View {
     }
 }
 
+struct InfoBlockHori: View {
+    var hours: String
+    var tem: String
+    var wea_img: UIImage?
+    
+    var body: some View {
+        VStack {
+            Text(hours)
+            if wea_img != nil {
+                Image(uiImage: wea_img!)
+            }
+            Text(tem)
+        }
+    }
+}
+
 struct InfoBlock_Previews: PreviewProvider {
     static var previews: some View {
         InfoBlock(title: "Temperature", info: "23", img: nil, tips: "tips")

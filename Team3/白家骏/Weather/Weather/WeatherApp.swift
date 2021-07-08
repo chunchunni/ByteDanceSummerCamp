@@ -65,6 +65,12 @@ class returnInfosGeneral: ObservableObject {
         @Published var air: String = ""
         @Published var air_level: String = ""
         @Published var air_tips: String = ""
+        @Published var hours = [hour](repeating: returnInfosGeneral.datas.hour(), count: 8)
+        class hour: ObservableObject {
+            @Published var hours: String = ""
+            @Published var tem: String = ""
+            @Published var wea_img: String = ""
+        }
     }
 }
 var returnInfo = returnInfosGeneral()
@@ -96,8 +102,40 @@ func requestData(requestParas: requestParameters) {
         returnInfo.data.air = json["data"][0]["air"].string ?? ""
         returnInfo.data.air_tips = json["data"][0]["air_tips"].string ?? ""
         returnInfo.data.air_level = json["data"][0]["air_level"].string ?? ""
+
+        returnInfo.data.hours[0].hours = json["data"][0]["hours"][0]["hours"].string ?? ""
+        returnInfo.data.hours[0].tem = json["data"][0]["hours"][0]["tem"].string ?? ""
+        returnInfo.data.hours[0].wea_img = json["data"][0]["hours"][0]["wea_img"].string ?? ""
+        returnInfo.data.hours[1].hours = json["data"][0]["hours"][1]["hours"].string ?? ""
+        returnInfo.data.hours[1].tem = json["data"][0]["hours"][1]["tem"].string ?? ""
+        returnInfo.data.hours[1].wea_img = json["data"][0]["hours"][1]["wea_img"].string ?? ""
+        returnInfo.data.hours[2].hours = json["data"][0]["hours"][2]["hours"].string ?? ""
+        returnInfo.data.hours[2].tem = json["data"][0]["hours"][2]["tem"].string ?? ""
+        returnInfo.data.hours[2].wea_img = json["data"][0]["hours"][2]["wea_img"].string ?? ""
+        returnInfo.data.hours[3].hours = json["data"][0]["hours"][3]["hours"].string ?? ""
+        returnInfo.data.hours[3].tem = json["data"][0]["hours"][3]["tem"].string ?? ""
+        returnInfo.data.hours[3].wea_img = json["data"][0]["hours"][3]["wea_img"].string ?? ""
+        returnInfo.data.hours[4].hours = json["data"][0]["hours"][4]["hours"].string ?? ""
+        returnInfo.data.hours[4].tem = json["data"][0]["hours"][4]["tem"].string ?? ""
+        returnInfo.data.hours[4].wea_img = json["data"][0]["hours"][4]["wea_img"].string ?? ""
+        returnInfo.data.hours[5].hours = json["data"][0]["hours"][5]["hours"].string ?? ""
+        returnInfo.data.hours[5].tem = json["data"][0]["hours"][5]["tem"].string ?? ""
+        returnInfo.data.hours[5].wea_img = json["data"][0]["hours"][5]["wea_img"].string ?? ""
+        returnInfo.data.hours[6].hours = json["data"][0]["hours"][6]["hours"].string ?? ""
+        returnInfo.data.hours[6].tem = json["data"][0]["hours"][6]["tem"].string ?? ""
+        returnInfo.data.hours[6].wea_img = json["data"][0]["hours"][6]["wea_img"].string ?? ""
+        returnInfo.data.hours[7].hours = json["data"][0]["hours"][7]["hours"].string ?? ""
+        returnInfo.data.hours[7].tem = json["data"][0]["hours"][7]["tem"].string ?? ""
+        returnInfo.data.hours[7].wea_img = json["data"][0]["hours"][7]["wea_img"].string ?? ""
+
+        for i in 0...7 {
+            print("hour \(i).hours = \(returnInfo.data.hours[i].hours)")
+            print("hour \(i).tem = \(returnInfo.data.hours[i].tem)")
+        }
+        print("hour 2.hours = \(returnInfo.data.hours[2].hours)")
+        print("hour 1.tem = \(returnInfo.data.hours[1].tem)")
+        print("hour 4.wea_imgs = \(returnInfo.data.hours[4].wea_img)")
         print("cityid = \(returnInfo.cityid)")
-        print("wea = \(returnInfo.data.wea)")
     }
 }
 
