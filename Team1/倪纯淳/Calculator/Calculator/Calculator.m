@@ -12,10 +12,11 @@
 
 @synthesize operand1, operand2, accumulator;
 
-- (id) init
+- (id)init
+//id指针可以指向任意OC对象
 {
     self = [super init];
-    if (self)
+    if(self)
     {
         operand1 = [[Fraction alloc] init];
         operand2 = [[Fraction alloc] init];
@@ -24,13 +25,13 @@
     return self;
 }
 
-- (void) clear
+- (void)clear
 {
     accumulator.numerator = 0;
     accumulator.denominator = 0;
 }
 
-- (Fraction *) performOperation: (char) op
+- (Fraction *)performOperation:(char)op
 {
     Fraction *result;
     switch (op) {

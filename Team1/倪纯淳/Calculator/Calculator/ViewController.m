@@ -29,7 +29,8 @@
     myCalculator = [[Calculator alloc] init];
 }
 
-- (void) processDigit: (int) digit
+//显示数字
+- (void)processDigit:(int) digit
 {
     currentNumber = currentNumber * 10 + digit;
     [displayString appendString:[NSString stringWithFormat:@"%i", digit]];
@@ -37,54 +38,55 @@
 }
 
 
-- (IBAction) clickButton0
+- (IBAction)clickButton0
 {
     [self processDigit: 0];
 }
-- (IBAction) clickButton1
+- (IBAction)clickButton1
 {
     [self processDigit: 1];
 }
-- (IBAction) clickButton2
+- (IBAction)clickButton2
 {
     [self processDigit: 2];
 }
-- (IBAction) clickButton3
+- (IBAction)clickButton3
 {
     [self processDigit: 3];
 }
-- (IBAction) clickButton4
+- (IBAction)clickButton4
 {
     [self processDigit: 4];
 }
-- (IBAction) clickButton5
+- (IBAction)clickButton5
 {
     [self processDigit: 5];
 }
-- (IBAction) clickButton6
+- (IBAction)clickButton6
 {
     [self processDigit: 6];
 }
-- (IBAction) clickButton7
+- (IBAction)clickButton7
 {
     [self processDigit: 7];
 }
-- (IBAction) clickButton8
+- (IBAction)clickButton8
 {
     [self processDigit: 8];
 }
-- (IBAction) clickButton9
+- (IBAction)clickButton9
 {
     [self processDigit: 9];
 }
 
-- (void) processOp: (char) theOp
+- (void)processOp:(char) theOp
 {
     NSString *opStr;
     
     op = theOp;
     
-    switch (theOp) {
+    switch (theOp)
+    {
         case '+':
             opStr = @" + ";
             break;
@@ -107,24 +109,24 @@
     display.text = displayString;
 }
 
-- (void) storeFracPart
+- (void)storeFracPart
 {
-    if (firstOperand)
+    if(firstOperand)
     {
-        if (isNumerator)
+        if(isNumerator)
         {
             myCalculator.operand1.numerator = currentNumber;
-            myCalculator.operand1.denominator = 1; // eg 3 * 4/5 =
+            myCalculator.operand1.denominator = 1;
         }
         else
         {
             myCalculator.operand1.denominator = currentNumber;
         }
     }
-    else if (isNumerator)
+    else if(isNumerator)
     {
         myCalculator.operand2.numerator = currentNumber;
-        myCalculator.operand2.denominator = 1; // eg 3/2 * 4 =
+        myCalculator.operand2.denominator = 1;
     }
     else
     {
@@ -135,7 +137,7 @@
 }
 
 
-- (IBAction) clickOver
+- (IBAction)clickOver
 {
     [self storeFracPart];
     isNumerator = NO;
@@ -144,23 +146,27 @@
 }
 
 //算术操作键
-- (IBAction) clickPlus {
+- (IBAction)clickPlus
+{
     [self processOp:'+'];
 }
-- (IBAction) clickMinus {
+- (IBAction)clickMinus
+{
     [self processOp:'-'];
 }
-- (IBAction) clickMultiply {
+- (IBAction)clickMultiply
+{
     [self processOp:'*'];
 }
-- (IBAction) clickDivide {
+- (IBAction)clickDivide
+{
     [self processOp:'/'];
 }
 
 //MISC键
-- (IBAction) clickEquals
+- (IBAction)clickEquals
 {
-    if (firstOperand == NO)
+    if(firstOperand == NO)
     {
         [self storeFracPart];
         [myCalculator performOperation:op];
@@ -176,7 +182,8 @@
     }
 }
 
-- (IBAction) clickClear {
+- (IBAction)clickClear
+{
     isNumerator = YES;
     firstOperand = YES;
     currentNumber = 0;

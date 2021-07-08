@@ -12,20 +12,20 @@
 
 @synthesize numerator, denominator;
 
-- (void) setTo: (int) n over: (int) d
+- (void)setTo:(int)n over: (int)d
 {
     numerator = n;
     denominator = d;
 }
 
-- (void) print
+- (void)print
 {
     NSLog(@"%i/%i", numerator, denominator);
 }
 
-- (double) convertToNum
+- (double)convertToNum
 {
-    if (denominator != 0)
+    if(denominator != 0)
     {
         return (double) numerator / denominator;
     }
@@ -36,11 +36,11 @@
 }
 
 //检查分子和分母
-- (NSString *) convertToString
+- (NSString *)convertToString
 {
-    if (numerator == denominator)
+    if(numerator == denominator)
     {
-        if (numerator == 0)
+        if(numerator == 0)
         {
             return @"0";
         }
@@ -49,7 +49,7 @@
             return @"1";
         }
     }
-    else if (denominator == 1)
+    else if(denominator == 1)
     {
         return [NSString stringWithFormat:@"%i", numerator];
     }
@@ -61,7 +61,7 @@
 
 //添加分数到消息的接收器
 
-- (Fraction *) add: (Fraction *) f
+- (Fraction *)add: (Fraction *)f
 {
     //分数相加，存储结果
     Fraction *result = [[Fraction alloc] init];
@@ -71,7 +71,7 @@
     return result;
 }
 
-- (Fraction *) sub: (Fraction *) f
+- (Fraction *)sub: (Fraction *)f
 {
     //分数相减，存储结果
     Fraction *result = [[Fraction alloc] init];
@@ -81,7 +81,7 @@
     return result;
 }
 
-- (Fraction *) mul: (Fraction *) f
+- (Fraction *)mul: (Fraction *)f
 {
     Fraction *result = [[Fraction alloc] init];
     result.numerator = numerator * f.numerator;
@@ -90,7 +90,7 @@
     return result;
 }
 
-- (Fraction *) div: (Fraction *) f
+- (Fraction *)div: (Fraction *)f
 {
     Fraction *result = [[Fraction alloc] init];
     result.numerator = numerator * f.denominator;
@@ -98,19 +98,22 @@
     [result reduce];
     return result;
 }
-- (void) reduce {
+
+//分数化简
+- (void)reduce
+{
     int u = numerator;
     int v = denominator;
     int temp;
-    if (u == 0)
+    if(u == 0)
     {
         return;
     }
-    else if ( u < 0)
+    else if( u < 0)
     {
         u = -u;
     }
-    while (v != 0)
+    while(v != 0)
     {
         temp = u % v;
         u = v;
