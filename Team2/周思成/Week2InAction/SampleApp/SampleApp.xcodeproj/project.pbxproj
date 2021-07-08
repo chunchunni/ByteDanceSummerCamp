@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5336B30B26968B7E00C897C6 /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5336B30A26968B7E00C897C6 /* GTRecommendViewController.m */; };
 		533F1C98268EAA3100FED489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1C97268EAA3100FED489 /* AppDelegate.m */; };
 		533F1C9B268EAA3100FED489 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1C9A268EAA3100FED489 /* SceneDelegate.m */; };
 		533F1C9E268EAA3100FED489 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1C9D268EAA3100FED489 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5336B30926968B7E00C897C6 /* GTRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTRecommendViewController.h; sourceTree = "<group>"; };
+		5336B30A26968B7E00C897C6 /* GTRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommendViewController.m; sourceTree = "<group>"; };
 		533F1C93268EAA3100FED489 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533F1C96268EAA3100FED489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		533F1C97268EAA3100FED489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				533F1CA2268EAA3100FED489 /* SampleApp.xcdatamodeld */,
 				533F1CD12692D46400FED489 /* GTVideoViewController.h */,
 				533F1CD22692D46400FED489 /* GTVideoViewController.m */,
+				5336B30926968B7E00C897C6 /* GTRecommendViewController.h */,
+				5336B30A26968B7E00C897C6 /* GTRecommendViewController.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			files = (
 				533F1CAC268EAA3200FED489 /* main.m in Sources */,
 				533F1C9E268EAA3100FED489 /* ViewController.m in Sources */,
+				5336B30B26968B7E00C897C6 /* GTRecommendViewController.m in Sources */,
 				533F1CA4268EAA3100FED489 /* SampleApp.xcdatamodeld in Sources */,
 				533F1C98268EAA3100FED489 /* AppDelegate.m in Sources */,
 				533F1C9B268EAA3100FED489 /* SceneDelegate.m in Sources */,
