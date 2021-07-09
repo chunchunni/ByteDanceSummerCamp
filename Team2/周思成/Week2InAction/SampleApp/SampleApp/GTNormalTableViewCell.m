@@ -17,6 +17,8 @@
 
 @property(nonatomic, strong, readwrite) UIImageView *rightimageView;
 
+@property(nonatomic, strong, readwrite) UIButton *deleteButton;
+
 
 
 @end
@@ -74,6 +76,16 @@
             self.rightimageView.contentMode = UIViewContentModeScaleAspectFit;
             self.rightimageView;
         })];
+        [self.contentView addSubview:({
+            self.deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(260 , 80, 30, 20)];
+            self.deleteButton.backgroundColor = [UIColor blueColor];
+//            self.deleteButton.contentMode = UIViewContentModeScaleAspectFit;
+            [self.deleteButton setTitle:@"X" forState:UIControlStateNormal];
+            [self.deleteButton setTitle:@"V" forState:UIControlStateHighlighted];
+            [self.deleteButton addTarget:self action:@selector(deleteButtonClick) forControlEvents:UIControlEventTouchUpInside];
+            self.deleteButton;
+        })];
+        
     }
     return self;
 }
@@ -93,6 +105,29 @@
     self.timeLabel.frame = CGRectMake(self.commentLabel.frame.origin.x+self.commentLabel.frame.size.width+15, self.timeLabel.frame.origin.y, self.timeLabel.frame.size.width, self.timeLabel.frame.size.height);
     
     self.rightimageView.image = [UIImage imageNamed:@"icon/page@2x.png"];
+}
+
+-(void)deleteButtonClick{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"是否要删除" message:@"请点击“是”确认" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *conform = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了是按钮");
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了否按钮");
+    }];
+    
+    [alert addAction:conform];
+    [alert addAction:cancel];
+    
+    id object = self;
+    while (![object isKindOfClass:[UIViewController class]]) {
+        object = [object nextResponder];
+    }
+    // nextPresponder 方法来可类似获取上一级的类
+    UIViewController *vc = (UIViewController *)object;
+    [vc presentViewController:alert animated:YES completion:nil];
+    
 }
 
 @end
