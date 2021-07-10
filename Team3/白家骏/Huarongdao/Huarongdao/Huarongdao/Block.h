@@ -20,10 +20,10 @@
 - (int)extenX;
 - (int)extenY;
 - (BOOL)leftMove;
-- (void)rightMove;
-- (void)downMove;
-- (void)upMove;
-- (void)initLocation;
+- (BOOL)rightMove;
+- (BOOL)downMove;
+- (BOOL)upMove;
+- (BOOL)initLocation;
 
 @end
 #endif /* Block_h */

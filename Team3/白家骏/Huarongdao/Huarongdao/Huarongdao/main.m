@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-int map[4][3];
+int map[5][4];
 
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;

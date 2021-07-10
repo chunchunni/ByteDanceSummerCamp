@@ -10,51 +10,120 @@
 
 extern int map[4][3];
 
-@implementation Block : NSObject 
+@implementation Block : NSObject {
+    int locationX;
+    int locationY;
+    int extenX;
+    int extenY;
+}
 
 - (int)locationX {
-    return self.locationX;
+    return locationX;
 }
 
 - (int)locationY {
-    return self.locationY;
+    return locationY;
 }
 
 - (int)extenX {
-    return self.extenX;
+    return extenX;
 }
 
 - (int)extenY {
-    return self.extenY;
+    return extenY;
 }
 
 - (BOOL)downMove {
-    for(int i = 0; i < self.extenY; i++) {
-        if(map[self.locationX][self.locationY + i]) {
-            return false;
+    for(int i = 0; i < extenX; i++) {
+        if(map[locationX + i][locationY + extenY]) {
+            return NO;
         }
     }
-    self.locationY++;
-}
-
-- (void)leftMove {
-    self.locationX--;
-}
-
-- (void)rightMove {
-    self.locationX++;
-}
-
-- (void)upMove {
-    self.locationY--;
-}
-
-- (void)initLocation {
-    for(int i = 0; i < self.extenX; i++) {
-        map[self.locationX + i][self.locationY] = 1;
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 0;
+        }
     }
-    for(int i = 0; i < self.extenY; i++) {
-        map[self.locationX][self.locationY + i] = 1;
+    locationY++;
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 1;
+        }
     }
+    return YES;
+}
+
+- (BOOL)leftMove {
+    for(int i = 0; i < extenY; i++) {
+        if(map[locationX - 1][locationY + i]) {
+            return NO;
+        }
+    }
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 0;
+        }
+    }
+    locationX--;
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 1;
+        }
+    }
+    return YES;
+}
+
+- (BOOL)rightMove {
+    for(int i = 0; i < extenY; i++) {
+        if(map[locationX + extenX][locationY + i]) {
+            return NO;
+        }
+    }
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 0;
+        }
+    }
+    locationX++;
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 1;
+        }
+    }
+    return YES;
+}
+
+- (BOOL)upMove {
+    for(int i = 0; i < extenX; i++) {
+        if(map[locationX + i][locationY - 1]) {
+            return NO;
+        }
+    }
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 0;
+        }
+    }
+    locationY--;
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            map[locationX + i][locationY + j] = 1;
+        }
+    }
+    return YES;
+}
+
+- (BOOL)initLocation {
+    for(int i = 0; i < extenX; i++) {
+        for(int j = 0; j < extenY; j++) {
+            if(!map[locationX + i][locationY + j]) {
+                map[locationX + i][locationY + j] = 1;
+            }
+            else {
+                return NO;
+            }
+        }
+    }
+    return YES;
 }
 @end
