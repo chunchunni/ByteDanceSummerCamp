@@ -78,11 +78,17 @@
         })];
         [self.contentView addSubview:({
             self.deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(260 , 80, 30, 20)];
-            self.deleteButton.backgroundColor = [UIColor blueColor];
+            //self.deleteButton.backgroundColor = [UIColor blueColor];
 //            self.deleteButton.contentMode = UIViewContentModeScaleAspectFit;
             [self.deleteButton setTitle:@"X" forState:UIControlStateNormal];
             [self.deleteButton setTitle:@"V" forState:UIControlStateHighlighted];
             [self.deleteButton addTarget:self action:@selector(deleteButtonClick) forControlEvents:UIControlEventTouchUpInside];
+            self.deleteButton.layer.cornerRadius = 10;
+            self.deleteButton.layer.masksToBounds = YES;
+            
+            self.deleteButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
+            self.deleteButton.layer.borderWidth =2;
+            
             self.deleteButton;
         })];
         
@@ -108,26 +114,28 @@
 }
 
 -(void)deleteButtonClick{
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"是否要删除" message:@"请点击“是”确认" preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *conform = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"点击了是按钮");
-    }];
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        NSLog(@"点击了否按钮");
-    }];
-    
-    [alert addAction:conform];
-    [alert addAction:cancel];
-    
-    id object = self;
-    while (![object isKindOfClass:[UIViewController class]]) {
-        object = [object nextResponder];
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"是否要删除" message:@"请点击“是”确认" preferredStyle:UIAlertControllerStyleAlert];
+//
+//    UIAlertAction *conform = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"点击了是按钮");
+//    }];
+//    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        NSLog(@"点击了否按钮");
+//    }];
+//
+//    [alert addAction:conform];
+//    [alert addAction:cancel];
+//
+//    id object = self;
+//    while (![object isKindOfClass:[UIViewController class]]) {
+//        object = [object nextResponder];
+//    }
+//    // nextPresponder 方法来可类似获取上一级的类
+//    UIViewController *vc = (UIViewController *)object;
+//    [vc presentViewController:alert animated:YES completion:nil];
+    if(self.delegate && [self.delegate respondsToSelector:@selector(tableViewCell:clickDeleteButton:)]){
+        [self.delegate tableViewCell:self clickDeleteButton:self.deleteButton];
     }
-    // nextPresponder 方法来可类似获取上一级的类
-    UIViewController *vc = (UIViewController *)object;
-    [vc presentViewController:alert animated:YES completion:nil];
-    
 }
 
 @end

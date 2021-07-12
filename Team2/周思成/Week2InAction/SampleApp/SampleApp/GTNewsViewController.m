@@ -5,14 +5,29 @@
 //  Created by zsc on 2021/7/1.
 //
 
-#import "ViewController.h"
+#import "GTNewsViewController.h"
 #import "GTNormalTableViewCell.h"
-
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+#import "GTDetailViewController.h"
+#import "GTDeleteCellView.h"
+@interface GTNewsViewController ()<UITableViewDataSource,UITableViewDelegate,GTNormalTableViewCellDelegate>
+@property(nonatomic, strong, readwrite)UITableView * tableView;
+@property(nonatomic, strong, readwrite)NSMutableArray *dataArray;
 @end
 
-@implementation ViewController
+@implementation GTNewsViewController
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _dataArray = @[].mutableCopy;
+        for(int i =0;i<20;i++){
+            [_dataArray addObject:@(i)];
+        }
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,10 +41,10 @@
 //
 //    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(pushController)];
 //    [view2 addGestureRecognizer:tapGesture];
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    [self.view addSubview:tableView];
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [self.view addSubview:_tableView];
 }
 
 //-(void)pushController{
@@ -49,14 +64,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UIViewController *controller = [[UIViewController alloc] init];
+    GTDetailViewController *controller = [[GTDetailViewController alloc] init];
     
     controller.title = [NSString stringWithFormat:@"%@", @(indexPath.row)];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return _dataArray.count;
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -67,6 +82,7 @@
     GTNormalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"id"];
     if(!cell){
         cell = [[GTNormalTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        cell.delegate = self;
     }
     
     //UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
@@ -77,6 +93,19 @@
     [cell layoutTableViewCell];
     
     return cell;
+}
+
+-(void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton{
+    GTDeleteCellView *deleteView = [[GTDeleteCellView alloc]initWithFrame:self.view.bounds];
+    CGRect  rect  = [tableViewCell convertRect:deleteButton.frame toView:nil];
+    
+    
+    __weak typeof(self) wself = self;
+    [deleteView showDeleteViewFromPoint:rect.origin clickBlock:^{
+        __strong typeof(self) strongSelf = wself;
+        [strongSelf.dataArray removeLastObject];
+        [strongSelf.tableView deleteRowsAtIndexPaths:@[[self.tableView indexPathForCell:tableViewCell]] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
 }
 
 @end

@@ -36,6 +36,17 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
++(UIWindow*)keyWindow {
+    UIWindow        *windowRoot = nil;
+    NSArray         *windows = [[UIApplication sharedApplication]windows];
+    for (UIWindow   *window in windows) {
+        if (window.isKeyWindow) {
+            windowRoot = window;
+            break;
+        }
+    }
+    return windowRoot;
+}
 
 #pragma mark - Core Data stack
 

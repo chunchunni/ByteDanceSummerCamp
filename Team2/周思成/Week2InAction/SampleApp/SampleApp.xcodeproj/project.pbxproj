@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		5336B30B26968B7E00C897C6 /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5336B30A26968B7E00C897C6 /* GTRecommendViewController.m */; };
 		5336B30E2697E54400C897C6 /* GTNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5336B30D2697E54400C897C6 /* GTNormalTableViewCell.m */; };
+		5336B3112698656400C897C6 /* GTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5336B3102698656400C897C6 /* GTDetailViewController.m */; };
 		533F1C98268EAA3100FED489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1C97268EAA3100FED489 /* AppDelegate.m */; };
 		533F1C9B268EAA3100FED489 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1C9A268EAA3100FED489 /* SceneDelegate.m */; };
-		533F1C9E268EAA3100FED489 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1C9D268EAA3100FED489 /* ViewController.m */; };
+		533F1C9E268EAA3100FED489 /* GTNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1C9D268EAA3100FED489 /* GTNewsViewController.m */; };
 		533F1CA1268EAA3100FED489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533F1C9F268EAA3100FED489 /* Main.storyboard */; };
 		533F1CA4268EAA3100FED489 /* SampleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533F1CA2268EAA3100FED489 /* SampleApp.xcdatamodeld */; };
 		533F1CA6268EAA3200FED489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533F1CA5268EAA3200FED489 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		533F1CC1268EAA3200FED489 /* SampleAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1CC0268EAA3200FED489 /* SampleAppUITests.m */; };
 		533F1CCF268ED98500FED489 /* icon in Resources */ = {isa = PBXBuildFile; fileRef = 533F1CCE268ED98500FED489 /* icon */; };
 		533F1CD32692D46400FED489 /* GTVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 533F1CD22692D46400FED489 /* GTVideoViewController.m */; };
+		53A4D69F269BECA400E88570 /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A4D69E269BECA400E88570 /* GTDeleteCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +47,15 @@
 		5336B30A26968B7E00C897C6 /* GTRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommendViewController.m; sourceTree = "<group>"; };
 		5336B30C2697E54400C897C6 /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
 		5336B30D2697E54400C897C6 /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
+		5336B30F2698656400C897C6 /* GTDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDetailViewController.h; sourceTree = "<group>"; };
+		5336B3102698656400C897C6 /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		533F1C93268EAA3100FED489 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533F1C96268EAA3100FED489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		533F1C97268EAA3100FED489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		533F1C99268EAA3100FED489 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		533F1C9A268EAA3100FED489 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		533F1C9C268EAA3100FED489 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		533F1C9D268EAA3100FED489 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		533F1C9C268EAA3100FED489 /* GTNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNewsViewController.h; sourceTree = "<group>"; };
+		533F1C9D268EAA3100FED489 /* GTNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNewsViewController.m; sourceTree = "<group>"; };
 		533F1CA0268EAA3100FED489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		533F1CA3268EAA3100FED489 /* SampleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SampleApp.xcdatamodel; sourceTree = "<group>"; };
 		533F1CA5268EAA3200FED489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 		533F1CCE268ED98500FED489 /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
 		533F1CD12692D46400FED489 /* GTVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoViewController.h; sourceTree = "<group>"; };
 		533F1CD22692D46400FED489 /* GTVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoViewController.m; sourceTree = "<group>"; };
+		53A4D69D269BECA400E88570 /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
+		53A4D69E269BECA400E88570 /* GTDeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDeleteCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +128,8 @@
 				533F1C97268EAA3100FED489 /* AppDelegate.m */,
 				533F1C99268EAA3100FED489 /* SceneDelegate.h */,
 				533F1C9A268EAA3100FED489 /* SceneDelegate.m */,
-				533F1C9C268EAA3100FED489 /* ViewController.h */,
-				533F1C9D268EAA3100FED489 /* ViewController.m */,
+				533F1C9C268EAA3100FED489 /* GTNewsViewController.h */,
+				533F1C9D268EAA3100FED489 /* GTNewsViewController.m */,
 				533F1C9F268EAA3100FED489 /* Main.storyboard */,
 				533F1CA5268EAA3200FED489 /* Assets.xcassets */,
 				533F1CA7268EAA3200FED489 /* LaunchScreen.storyboard */,
@@ -136,6 +142,10 @@
 				5336B30A26968B7E00C897C6 /* GTRecommendViewController.m */,
 				5336B30C2697E54400C897C6 /* GTNormalTableViewCell.h */,
 				5336B30D2697E54400C897C6 /* GTNormalTableViewCell.m */,
+				5336B30F2698656400C897C6 /* GTDetailViewController.h */,
+				5336B3102698656400C897C6 /* GTDetailViewController.m */,
+				53A4D69D269BECA400E88570 /* GTDeleteCellView.h */,
+				53A4D69E269BECA400E88570 /* GTDeleteCellView.m */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -290,11 +300,13 @@
 			files = (
 				533F1CAC268EAA3200FED489 /* main.m in Sources */,
 				5336B30E2697E54400C897C6 /* GTNormalTableViewCell.m in Sources */,
-				533F1C9E268EAA3100FED489 /* ViewController.m in Sources */,
+				533F1C9E268EAA3100FED489 /* GTNewsViewController.m in Sources */,
 				5336B30B26968B7E00C897C6 /* GTRecommendViewController.m in Sources */,
 				533F1CA4268EAA3100FED489 /* SampleApp.xcdatamodeld in Sources */,
 				533F1C98268EAA3100FED489 /* AppDelegate.m in Sources */,
+				5336B3112698656400C897C6 /* GTDetailViewController.m in Sources */,
 				533F1C9B268EAA3100FED489 /* SceneDelegate.m in Sources */,
+				53A4D69F269BECA400E88570 /* GTDeleteCellView.m in Sources */,
 				533F1CD32692D46400FED489 /* GTVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

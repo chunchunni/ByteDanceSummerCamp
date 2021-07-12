@@ -14,6 +14,7 @@
 
 - (void)saveContext;
 
++(UIWindow*)keyWindow;
 
 @end
 

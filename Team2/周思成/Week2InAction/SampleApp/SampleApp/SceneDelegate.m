@@ -7,7 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "GTNewsViewController.h"
 #import "GTVideoViewController.h"
 #import "GTRecommendViewController.h"
 
@@ -29,7 +29,7 @@
 //                 UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[UIViewController alloc]init]];
                  UITabBarController *tabbarController = [[UITabBarController alloc]init];
                  
-                 ViewController *viewController = [[ViewController alloc] init];
+                 GTNewsViewController *viewController = [[GTNewsViewController alloc] init];
                  
                  
                  
