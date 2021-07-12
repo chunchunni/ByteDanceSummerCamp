@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "Block.h"
 
-extern int map[4][3];
+extern int map[5][4];
 
 @implementation Block : NSObject {
     int locationX;
@@ -34,6 +34,9 @@ extern int map[4][3];
 }
 
 - (BOOL)downMove {
+    if(locationY + extenY > 5) {
+        return NO;
+    }
     for(int i = 0; i < extenX; i++) {
         if(map[locationX + i][locationY + extenY]) {
             return NO;
@@ -54,6 +57,9 @@ extern int map[4][3];
 }
 
 - (BOOL)leftMove {
+    if(locationX == 1) {
+        return NO;
+    }
     for(int i = 0; i < extenY; i++) {
         if(map[locationX - 1][locationY + i]) {
             return NO;
@@ -74,6 +80,9 @@ extern int map[4][3];
 }
 
 - (BOOL)rightMove {
+    if(locationX + extenX > 4) {
+        return NO;
+    }
     for(int i = 0; i < extenY; i++) {
         if(map[locationX + extenX][locationY + i]) {
             return NO;
@@ -94,6 +103,9 @@ extern int map[4][3];
 }
 
 - (BOOL)upMove {
+    if(locationY == 1) {
+        return NO;
+    }
     for(int i = 0; i < extenX; i++) {
         if(map[locationX + i][locationY - 1]) {
             return NO;
@@ -126,4 +138,12 @@ extern int map[4][3];
     }
     return YES;
 }
+
+- (void)setInfo:(int)loX :(int)loY :(int)exX :(int)exY {
+    locationX = loX;
+    locationY = loY;
+    extenX = exX;
+    extenY = exY;
+}
+
 @end

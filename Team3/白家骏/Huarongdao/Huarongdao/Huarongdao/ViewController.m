@@ -31,7 +31,6 @@
     CGPoint movingCenter = self.Block0.center;
     Block0.center = movingCenter;
     
-    //movingCenter.y += 100;
     [UIView animateWithDuration: 1 animations:^{
         Block0.center = movingCenter;
     }completion: nil];

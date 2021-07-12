@@ -24,6 +24,7 @@
 - (BOOL)downMove;
 - (BOOL)upMove;
 - (BOOL)initLocation;
+- (void)setInfo: (int) loX: (int) loY: (int) exX: (int) exY;
 
 @end
 #endif /* Block_h */
