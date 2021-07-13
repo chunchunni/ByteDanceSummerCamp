@@ -79,6 +79,23 @@ struct InfoBlockHori: View {
     }
 }
 
+struct InfoBlockFuture: View {
+    var day: String
+    var wea: String
+    var tem1: String
+    var tem2: String
+    
+    var body: some View {
+        HStack {
+            Text(day)
+            Spacer()
+            Text(wea)
+            Spacer()
+            Text("\(tem2) ~ \(tem1)")
+        }
+    }
+}
+
 struct InfoBlock_Previews: PreviewProvider {
     static var previews: some View {
         InfoBlock(title: "Temperature", info: "23", img: nil, tips: "tips")
