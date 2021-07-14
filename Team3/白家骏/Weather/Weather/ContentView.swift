@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            currentWeatherView()
-                .tabItem { Text("Current") }
+            CityListView()
+                .tabItem { Text("City List") }
             weatherQualityView()
                 .tabItem { Text("Air Quality") }
         }

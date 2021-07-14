@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct currentWeatherView: View {
+    var cityName: String
     @ObservedObject var reInfo = returnInfo
     var body: some View {
-        NavigationView {
+        VStack {
             List {
                 Group {
                     InfoBlock(title: "Weather", info: "\(reInfo.data.wea)", img: nil, tips: nil)
@@ -51,14 +52,15 @@ struct currentWeatherView: View {
                 Text("Country: \(reInfo.countryEn)    City ID: \(reInfo.cityid)   \nUpdate time: \(reInfo.update_time)")
                     .font(.caption)
             }
-            .navigationBarTitle(Text("Chengdu"))
+            .edgesIgnoringSafeArea(.all)
+            .navigationBarTitle(Text(cityName), displayMode: .inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+        //.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
 struct currentWeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        currentWeatherView()
+        currentWeatherView(cityName: "成都")
     }
 }

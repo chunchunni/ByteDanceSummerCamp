@@ -34,7 +34,7 @@ class NetworkManager: AFHTTPSessionManager {
 
 class requestParameters {
     var appid: String = "63411561"
-    var appsecret: String = "iMuuM8O3"
+    var appsecret: String = "D1qFhLgW"
     var version: String = "v1"
     var city:String
     init(city: String) {
@@ -90,6 +90,12 @@ class returnInfosGeneral: ObservableObject {
     }
 }
 var returnInfo = returnInfosGeneral()
+
+class returnInfosBrief: ObservableObject {
+    @Published var cityName: String = ""
+    @Published var wea: String = ""
+    @Published var tem: String = ""
+}
 
 func requestData(requestParas: requestParameters) {
     let manager = NetworkManager()
