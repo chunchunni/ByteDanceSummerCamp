@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841192012694AC3B008E4899 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841192002694AC3B008E4899 /* AppDelegate.m */; };
+		841192042694AC3B008E4899 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841192032694AC3B008E4899 /* SceneDelegate.m */; };
+		841192072694AC3B008E4899 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841192062694AC3B008E4899 /* ViewController.m */; };
+		8411920A2694AC3B008E4899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841192082694AC3B008E4899 /* Main.storyboard */; };
+		8411920C2694AC3C008E4899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411920B2694AC3C008E4899 /* Assets.xcassets */; };
+		8411920F2694AC3C008E4899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411920D2694AC3C008E4899 /* LaunchScreen.storyboard */; };
+		841192122694AC3C008E4899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841192112694AC3C008E4899 /* main.m */; };
+		8411921C2694AC3D008E4899 /* Fraction_calculator_whzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8411921B2694AC3D008E4899 /* Fraction_calculator_whzTests.m */; };
+		841192272694AC3D008E4899 /* Fraction_calculator_whzUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 841192262694AC3D008E4899 /* Fraction_calculator_whzUITests.m */; };
+		841192432694B1C0008E4899 /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192342694B1BF008E4899 /* pic3.png */; };
+		841192442694B1C0008E4899 /* pic5.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192352694B1BF008E4899 /* pic5.png */; };
+		841192452694B1C0008E4899 /* pic12.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192362694B1BF008E4899 /* pic12.png */; };
+		841192462694B1C0008E4899 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192372694B1BF008E4899 /* pic2.png */; };
+		841192472694B1C0008E4899 /* pic13.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192382694B1BF008E4899 /* pic13.png */; };
+		841192482694B1C0008E4899 /* pic14.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192392694B1BF008E4899 /* pic14.png */; };
+		841192492694B1C0008E4899 /* pic6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8411923A2694B1BF008E4899 /* pic6.png */; };
+		8411924A2694B1C0008E4899 /* pic9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8411923B2694B1BF008E4899 /* pic9.png */; };
+		8411924B2694B1C0008E4899 /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8411923C2694B1BF008E4899 /* pic1.png */; };
+		8411924C2694B1C0008E4899 /* pic4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8411923D2694B1BF008E4899 /* pic4.png */; };
+		8411924D2694B1C0008E4899 /* pic7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8411923E2694B1BF008E4899 /* pic7.png */; };
+		8411924E2694B1C0008E4899 /* pic11.png in Resources */ = {isa = PBXBuildFile; fileRef = 8411923F2694B1C0008E4899 /* pic11.png */; };
+		8411924F2694B1C0008E4899 /* pic0.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192402694B1C0008E4899 /* pic0.png */; };
+		841192502694B1C0008E4899 /* pic10.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192412694B1C0008E4899 /* pic10.png */; };
+		841192512694B1C0008E4899 /* pic8.png in Resources */ = {isa = PBXBuildFile; fileRef = 841192422694B1C0008E4899 /* pic8.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841192182694AC3D008E4899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841191F42694AC3B008E4899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841191FB2694AC3B008E4899;
+			remoteInfo = Fraction_calculator_whz;
+		};
+		841192232694AC3D008E4899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841191F42694AC3B008E4899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 841191FB2694AC3B008E4899;
+			remoteInfo = Fraction_calculator_whz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841191FC2694AC3B008E4899 /* HuaRongDao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuaRongDao.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841191FF2694AC3B008E4899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		841192002694AC3B008E4899 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		841192022694AC3B008E4899 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		841192032694AC3B008E4899 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		841192052694AC3B008E4899 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		841192062694AC3B008E4899 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		841192092694AC3B008E4899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8411920B2694AC3C008E4899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8411920E2694AC3C008E4899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		841192102694AC3C008E4899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841192112694AC3C008E4899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		841192172694AC3D008E4899 /* HuaRongDaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuaRongDaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411921B2694AC3D008E4899 /* Fraction_calculator_whzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction_calculator_whzTests.m; sourceTree = "<group>"; };
+		8411921D2694AC3D008E4899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841192222694AC3D008E4899 /* HuaRongDaoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuaRongDaoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		841192262694AC3D008E4899 /* Fraction_calculator_whzUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction_calculator_whzUITests.m; sourceTree = "<group>"; };
+		841192282694AC3D008E4899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841192342694B1BF008E4899 /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic3.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic3.png"; sourceTree = "<group>"; };
+		841192352694B1BF008E4899 /* pic5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic5.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic5.png"; sourceTree = "<group>"; };
+		841192362694B1BF008E4899 /* pic12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic12.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic12.png"; sourceTree = "<group>"; };
+		841192372694B1BF008E4899 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic2.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic2.png"; sourceTree = "<group>"; };
+		841192382694B1BF008E4899 /* pic13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic13.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic13.png"; sourceTree = "<group>"; };
+		841192392694B1BF008E4899 /* pic14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic14.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic14.png"; sourceTree = "<group>"; };
+		8411923A2694B1BF008E4899 /* pic6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic6.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic6.png"; sourceTree = "<group>"; };
+		8411923B2694B1BF008E4899 /* pic9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic9.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic9.png"; sourceTree = "<group>"; };
+		8411923C2694B1BF008E4899 /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic1.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic1.png"; sourceTree = "<group>"; };
+		8411923D2694B1BF008E4899 /* pic4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic4.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic4.png"; sourceTree = "<group>"; };
+		8411923E2694B1BF008E4899 /* pic7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic7.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic7.png"; sourceTree = "<group>"; };
+		8411923F2694B1C0008E4899 /* pic11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic11.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic11.png"; sourceTree = "<group>"; };
+		841192402694B1C0008E4899 /* pic0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic0.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic0.png"; sourceTree = "<group>"; };
+		841192412694B1C0008E4899 /* pic10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic10.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic10.png"; sourceTree = "<group>"; };
+		841192422694B1C0008E4899 /* pic8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic8.png; path = "../../../../../Documents/华容道素材及源码@www.java1234.com/素材/pic8.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841191F92694AC3B008E4899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841192142694AC3D008E4899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411921F2694AC3D008E4899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		841191F32694AC3B008E4899 = {
+			isa = PBXGroup;
+			children = (
+				841191FE2694AC3B008E4899 /* HuaRongDao */,
+				8411921A2694AC3D008E4899 /* HuaRongDaoTests */,
+				841192252694AC3D008E4899 /* HuaRongDaoUITests */,
+				841191FD2694AC3B008E4899 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841191FD2694AC3B008E4899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841191FC2694AC3B008E4899 /* HuaRongDao.app */,
+				841192172694AC3D008E4899 /* HuaRongDaoTests.xctest */,
+				841192222694AC3D008E4899 /* HuaRongDaoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841191FE2694AC3B008E4899 /* HuaRongDao */ = {
+			isa = PBXGroup;
+			children = (
+				841191FF2694AC3B008E4899 /* AppDelegate.h */,
+				841192002694AC3B008E4899 /* AppDelegate.m */,
+				841192022694AC3B008E4899 /* SceneDelegate.h */,
+				841192032694AC3B008E4899 /* SceneDelegate.m */,
+				841192052694AC3B008E4899 /* ViewController.h */,
+				841192062694AC3B008E4899 /* ViewController.m */,
+				841192082694AC3B008E4899 /* Main.storyboard */,
+				8411920B2694AC3C008E4899 /* Assets.xcassets */,
+				841192402694B1C0008E4899 /* pic0.png */,
+				8411923C2694B1BF008E4899 /* pic1.png */,
+				841192372694B1BF008E4899 /* pic2.png */,
+				841192342694B1BF008E4899 /* pic3.png */,
+				8411923D2694B1BF008E4899 /* pic4.png */,
+				841192352694B1BF008E4899 /* pic5.png */,
+				8411923A2694B1BF008E4899 /* pic6.png */,
+				8411923E2694B1BF008E4899 /* pic7.png */,
+				841192422694B1C0008E4899 /* pic8.png */,
+				8411923B2694B1BF008E4899 /* pic9.png */,
+				841192412694B1C0008E4899 /* pic10.png */,
+				8411923F2694B1C0008E4899 /* pic11.png */,
+				841192362694B1BF008E4899 /* pic12.png */,
+				841192382694B1BF008E4899 /* pic13.png */,
+				841192392694B1BF008E4899 /* pic14.png */,
+				8411920D2694AC3C008E4899 /* LaunchScreen.storyboard */,
+				841192102694AC3C008E4899 /* Info.plist */,
+				841192112694AC3C008E4899 /* main.m */,
+			);
+			path = HuaRongDao;
+			sourceTree = "<group>";
+		};
+		8411921A2694AC3D008E4899 /* HuaRongDaoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8411921B2694AC3D008E4899 /* Fraction_calculator_whzTests.m */,
+				8411921D2694AC3D008E4899 /* Info.plist */,
+			);
+			path = HuaRongDaoTests;
+			sourceTree = "<group>";
+		};
+		841192252694AC3D008E4899 /* HuaRongDaoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				841192262694AC3D008E4899 /* Fraction_calculator_whzUITests.m */,
+				841192282694AC3D008E4899 /* Info.plist */,
+			);
+			path = HuaRongDaoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841191FB2694AC3B008E4899 /* HuaRongDao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8411922B2694AC3D008E4899 /* Build configuration list for PBXNativeTarget "HuaRongDao" */;
+			buildPhases = (
+				841191F82694AC3B008E4899 /* Sources */,
+				841191F92694AC3B008E4899 /* Frameworks */,
+				841191FA2694AC3B008E4899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuaRongDao;
+			productName = Fraction_calculator_whz;
+			productReference = 841191FC2694AC3B008E4899 /* HuaRongDao.app */;
+			productType = "com.apple.product-type.application";
+		};
+		841192162694AC3D008E4899 /* HuaRongDaoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8411922E2694AC3D008E4899 /* Build configuration list for PBXNativeTarget "HuaRongDaoTests" */;
+			buildPhases = (
+				841192132694AC3D008E4899 /* Sources */,
+				841192142694AC3D008E4899 /* Frameworks */,
+				841192152694AC3D008E4899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841192192694AC3D008E4899 /* PBXTargetDependency */,
+			);
+			name = HuaRongDaoTests;
+			productName = Fraction_calculator_whzTests;
+			productReference = 841192172694AC3D008E4899 /* HuaRongDaoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		841192212694AC3D008E4899 /* HuaRongDaoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841192312694AC3D008E4899 /* Build configuration list for PBXNativeTarget "HuaRongDaoUITests" */;
+			buildPhases = (
+				8411921E2694AC3D008E4899 /* Sources */,
+				8411921F2694AC3D008E4899 /* Frameworks */,
+				841192202694AC3D008E4899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841192242694AC3D008E4899 /* PBXTargetDependency */,
+			);
+			name = HuaRongDaoUITests;
+			productName = Fraction_calculator_whzUITests;
+			productReference = 841192222694AC3D008E4899 /* HuaRongDaoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841191F42694AC3B008E4899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					841191FB2694AC3B008E4899 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					841192162694AC3D008E4899 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 841191FB2694AC3B008E4899;
+					};
+					841192212694AC3D008E4899 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 841191FB2694AC3B008E4899;
+					};
+				};
+			};
+			buildConfigurationList = 841191F72694AC3B008E4899 /* Build configuration list for PBXProject "HuaRongDao" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841191F32694AC3B008E4899;
+			productRefGroup = 841191FD2694AC3B008E4899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841191FB2694AC3B008E4899 /* HuaRongDao */,
+				841192162694AC3D008E4899 /* HuaRongDaoTests */,
+				841192212694AC3D008E4899 /* HuaRongDaoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841191FA2694AC3B008E4899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411920F2694AC3C008E4899 /* LaunchScreen.storyboard in Resources */,
+				841192492694B1C0008E4899 /* pic6.png in Resources */,
+				841192442694B1C0008E4899 /* pic5.png in Resources */,
+				841192462694B1C0008E4899 /* pic2.png in Resources */,
+				8411920C2694AC3C008E4899 /* Assets.xcassets in Resources */,
+				8411924A2694B1C0008E4899 /* pic9.png in Resources */,
+				841192472694B1C0008E4899 /* pic13.png in Resources */,
+				8411924F2694B1C0008E4899 /* pic0.png in Resources */,
+				841192482694B1C0008E4899 /* pic14.png in Resources */,
+				8411924D2694B1C0008E4899 /* pic7.png in Resources */,
+				841192502694B1C0008E4899 /* pic10.png in Resources */,
+				841192512694B1C0008E4899 /* pic8.png in Resources */,
+				8411924C2694B1C0008E4899 /* pic4.png in Resources */,
+				8411924B2694B1C0008E4899 /* pic1.png in Resources */,
+				8411924E2694B1C0008E4899 /* pic11.png in Resources */,
+				841192432694B1C0008E4899 /* pic3.png in Resources */,
+				8411920A2694AC3B008E4899 /* Main.storyboard in Resources */,
+				841192452694B1C0008E4899 /* pic12.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841192152694AC3D008E4899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841192202694AC3D008E4899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841191F82694AC3B008E4899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841192072694AC3B008E4899 /* ViewController.m in Sources */,
+				841192012694AC3B008E4899 /* AppDelegate.m in Sources */,
+				841192122694AC3C008E4899 /* main.m in Sources */,
+				841192042694AC3B008E4899 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841192132694AC3D008E4899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411921C2694AC3D008E4899 /* Fraction_calculator_whzTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411921E2694AC3D008E4899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841192272694AC3D008E4899 /* Fraction_calculator_whzUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841192192694AC3D008E4899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841191FB2694AC3B008E4899 /* HuaRongDao */;
+			targetProxy = 841192182694AC3D008E4899 /* PBXContainerItemProxy */;
+		};
+		841192242694AC3D008E4899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 841191FB2694AC3B008E4899 /* HuaRongDao */;
+			targetProxy = 841192232694AC3D008E4899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		841192082694AC3B008E4899 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841192092694AC3B008E4899 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8411920D2694AC3C008E4899 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8411920E2694AC3C008E4899 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841192292694AC3D008E4899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8411922A2694AC3D008E4899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8411922C2694AC3D008E4899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46FX7U3Y8H;
+				INFOPLIST_FILE = HuaRongDao/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.basecat.HuaRongDao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8411922D2694AC3D008E4899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46FX7U3Y8H;
+				INFOPLIST_FILE = HuaRongDao/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.basecat.HuaRongDao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8411922F2694AC3D008E4899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46FX7U3Y8H;
+				INFOPLIST_FILE = Fraction_calculator_whzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.basecat.Fraction-calculator-whzTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuaRongDao.app/HuaRongDao";
+			};
+			name = Debug;
+		};
+		841192302694AC3D008E4899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46FX7U3Y8H;
+				INFOPLIST_FILE = Fraction_calculator_whzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.basecat.Fraction-calculator-whzTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuaRongDao.app/HuaRongDao";
+			};
+			name = Release;
+		};
+		841192322694AC3D008E4899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46FX7U3Y8H;
+				INFOPLIST_FILE = Fraction_calculator_whzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.basecat.Fraction-calculator-whzUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fraction_calculator_whz;
+			};
+			name = Debug;
+		};
+		841192332694AC3D008E4899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46FX7U3Y8H;
+				INFOPLIST_FILE = Fraction_calculator_whzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.basecat.Fraction-calculator-whzUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fraction_calculator_whz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841191F72694AC3B008E4899 /* Build configuration list for PBXProject "HuaRongDao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841192292694AC3D008E4899 /* Debug */,
+				8411922A2694AC3D008E4899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8411922B2694AC3D008E4899 /* Build configuration list for PBXNativeTarget "HuaRongDao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411922C2694AC3D008E4899 /* Debug */,
+				8411922D2694AC3D008E4899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8411922E2694AC3D008E4899 /* Build configuration list for PBXNativeTarget "HuaRongDaoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411922F2694AC3D008E4899 /* Debug */,
+				841192302694AC3D008E4899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841192312694AC3D008E4899 /* Build configuration list for PBXNativeTarget "HuaRongDaoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841192322694AC3D008E4899 /* Debug */,
+				841192332694AC3D008E4899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 841191F42694AC3B008E4899 /* Project object */;
+}

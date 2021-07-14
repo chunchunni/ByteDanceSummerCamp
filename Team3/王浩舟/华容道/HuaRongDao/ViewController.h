@@ -9,6 +9,7 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIView *allview;
 @property (strong, nonatomic) IBOutlet UIView *cc;
 @property (strong, nonatomic) IBOutlet UIView *zf;
 @property (strong, nonatomic) IBOutlet UIView *mc;
@@ -19,7 +20,9 @@
 @property (strong, nonatomic) IBOutlet UIView *xb2;
 @property (strong, nonatomic) IBOutlet UIView *xb3;
 @property (strong, nonatomic) IBOutlet UIView *xb4;
+@property (strong, nonatomic) IBOutlet UIButton *finishbutton;
 
+-(IBAction) clickfinish;
 
 
 @end
