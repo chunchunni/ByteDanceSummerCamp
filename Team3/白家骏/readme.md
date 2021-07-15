@@ -4,11 +4,39 @@
 
 暑假正在进行中。主要有两个项目。
 
-首先是继续完成已经开头了的天气项目，作为验收项目提交。
+首先是继续完成已经开头了的天气项目，作为验收项目提交。目前该项目已经完成大多数内容，剩下的工作主要是细节上的优化和美观上的设计。
 
 其次是为了熟悉Objective-C语言，完成一个华容道的演示App，主要目的是熟悉语法和算法。
 
 ## 各仓库进展说明
+
+### Weather
+
+【1.0】
+
+完成了通过天气API使用get获取天气信息，并解析json文件，同时完成了一个基本的UI用于呈现部分数据。
+
+【1.1】
+
+天气项目继续更新了部分内容，主要是未来数小时的天气信息的信息。接下来需要去收集一些素材去完善一下。
+
+同时还需要完成切换城市的模块。
+
+【1.2】
+
+解决目前页面中遇到的一些小问题。
+
+【2.0】
+
+完成了城市列表的模块，在城市列表里展示简要的信息，点进去可以查看详细信息。同时可以在城市列表添加新的城市。
+
+在详细信息中，增加了各种天气的图标，使页面更加美观。
+
+主要的工作已经基本完成，接下来可能是UI的小调整和个别细节的优化。另外还有最后的验收有一些工作需要完成。
+
+另外制作了GIF展示如下：
+
+![Aaron Swartz](https://github.com/chunchunni/ByteDanceSummerCamp/blob/main/Team3/白家骏/Weather/Demo/home1.gif?raw=true)
 
 ### Huarongdao
 
@@ -17,18 +45,6 @@
 完成的demo如下：
 
 ![Aaron Swartz](https://github.com/chunchunni/ByteDanceSummerCamp/blob/main/Team3/白家骏/Huarongdao/Demo/main.png?raw=true)
-
-### Weather
-
-完成了通过天气API使用get获取天气信息，并解析json文件，同时完成了一个基本的UI用于呈现部分数据。
-
-天气项目继续更新了部分内容，主要是未来数小时的天气信息的信息。接下来需要去收集一些素材去完善一下。
-
-同时还需要完成切换城市的模块。
-
-截图如下：
-
-![Aaron Swartz](https://github.com/chunchunni/ByteDanceSummerCamp/blob/main/Team3/白家骏/Weather/Demo/home1.png?raw=true)
 
 ### Calculator-Swift
 
