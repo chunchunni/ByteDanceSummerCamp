@@ -11,9 +11,9 @@ struct ContentView: View {
     var body: some View {
         TabView {
             CityListView()
-                .tabItem { Text("City List") }
+                .tabItem { Text("城市列表") }
             weatherQualityView()
-                .tabItem { Text("Air Quality") }
+                .tabItem { Text("空气质量") }
         }
     }
 }

@@ -16,9 +16,9 @@ struct currentWeatherView: View {
         VStack {
             List {
                 Group {
-                    InfoBlock(title: "Weather", info: "\(returnInfo.data.wea)", img: nil, tips: nil)
-                    InfoBlock(title: "Temperature", info: "\(returnInfo.data.tem)", img: nil, tips: nil)
-                    InfoBlock(title: "Temp Range", info: "\(returnInfo.data.tem2) ~ \(returnInfo.data.tem1)", img: nil, tips: nil)
+                    InfoBlock(title: "天气", info: "\(returnInfo.data.wea)", img: nil, tips: nil)
+                    InfoBlock(title: "实时温度", info: "\(returnInfo.data.tem)", img: nil, tips: nil)
+                    InfoBlock(title: "温度范围", info: "\(returnInfo.data.tem2) ~ \(returnInfo.data.tem1)", img: nil, tips: nil)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             Group {
@@ -44,11 +44,11 @@ struct currentWeatherView: View {
                         InfoBlockFuture(day: returnInfo.data5.day, wea: returnInfo.data5.wea, tem1: returnInfo.data5.tem1, tem2: returnInfo.data5.tem2)
                     }
                     
-                    InfoBlock(title: "Humidity", info: "\(returnInfo.data.humidity)", img: nil, tips: nil)
-                    InfoBlock(title: "Air Quality", info: "(AQI) \(returnInfo.data.air)   \(returnInfo.data.air_level)", img: nil, tips: "Air Tips: \(returnInfo.data.air_tips)")
-                    InfoBlock(title: "Visibility", info: "\(returnInfo.data.visibility)", img: nil, tips: nil)
-                    InfoBlockSmall(title1: "Sunrise", info1: "\(returnInfo.data.sunrise)", title2: "Sunset", info2: "\(returnInfo.data.sunset)", img: nil)
-                    InfoBlockSmall(title1: "Wind", info1: "\(returnInfo.data.win)", title2: "Wind Speed", info2: "\(returnInfo.data.win_speed)", img: nil)
+                    InfoBlock(title: "湿度", info: "\(returnInfo.data.humidity)", img: nil, tips: nil)
+                    InfoBlock(title: "空气质量", info: "(AQI) \(returnInfo.data.air)   \(returnInfo.data.air_level)", img: nil, tips: "空气质量提示： \(returnInfo.data.air_tips)")
+                    InfoBlock(title: "能见度", info: "\(returnInfo.data.visibility)", img: nil, tips: nil)
+                    InfoBlockSmall(title1: "日出", info1: "\(returnInfo.data.sunrise)", title2: "日落", info2: "\(returnInfo.data.sunset)", img: nil)
+                    InfoBlockSmall(title1: "风向", info1: "\(returnInfo.data.win)", title2: "风速", info2: "\(returnInfo.data.win_speed)", img: nil)
                 }
                 Spacer()
                 Text("Country: \(returnInfo.countryEn)    City ID: \(returnInfo.cityid)   \nUpdate time: \(returnInfo.update_time)")

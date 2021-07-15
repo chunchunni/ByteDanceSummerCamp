@@ -20,7 +20,7 @@ struct CityListView: View {
                         CityListUnit(cityName: cityNameList[index])
                     }
                 }
-                .navigationBarTitle("City List", displayMode: .automatic)
+                .navigationBarTitle("城市列表", displayMode: .automatic)
                 .navigationBarItems(trailing: Button(action: {isAddItemViewPresented = true}, label: {
                     Image(systemName: "plus")
                 }).sheet(isPresented: self.$isAddItemViewPresented, content: {
@@ -41,7 +41,7 @@ struct AddItemView: View {
         NavigationView {
             VStack {
                 HStack {
-                    Text("Enter the new city name:")
+                    Text("输入城市名称：")
                         .font(.title2)
                     Spacer()
                 }
@@ -54,7 +54,7 @@ struct AddItemView: View {
                 Spacer()
             }
             .padding()
-            .navigationBarTitle("Add New City", displayMode: .inline)
+            .navigationBarTitle("添加城市", displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {
                 if self.newCityName != "" {
                     cityNameList.append(newCityName)
@@ -65,7 +65,7 @@ struct AddItemView: View {
                 }
                 self.isPresented = false
             }, label: {
-                Text("Done")
+                Text("完成")
             }))
         }
     }
