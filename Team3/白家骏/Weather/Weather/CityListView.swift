@@ -10,7 +10,7 @@ import SwiftyJSON
 
 struct CityListView: View {
     @State private var isAddItemViewPresented = false
-    @State private var cityNameList = ["北京", "成都"]
+    @State private var cityNameList = ["北京", "西安", "成都"]
     
     var body: some View {
         NavigationView {

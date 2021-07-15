@@ -19,6 +19,11 @@ struct InfoBlock: View {
                 Text(title)
                     .font(.title3)
                 Spacer()
+                if img != nil {
+                    Image(uiImage: img!)
+                        .resizable()
+                        .frame(width: 16, height: 16, alignment: .center)
+                }
                 Text(info)
                     .multilineTextAlignment(.leading)     
             }
@@ -73,9 +78,13 @@ struct InfoBlockHori: View {
             Text(hours)
             if wea_img != nil {
                 Image(uiImage: wea_img!)
+                    .resizable()
+                    .frame(width: 40, height: 40, alignment: .center)
+                    .padding(10)
             }
             Text(tem)
         }
+        .padding(15)
     }
 }
 
@@ -84,12 +93,18 @@ struct InfoBlockFuture: View {
     var wea: String
     var tem1: String
     var tem2: String
+    var img: UIImage?
     
     var body: some View {
         HStack {
             Text(day)
             Spacer()
             Text(wea)
+            if img != nil {
+                Image(uiImage: img!)
+                    .resizable()
+                    .frame(width: 16, height: 16, alignment: .center)
+            }
             Spacer()
             Text("\(tem2) ~ \(tem1)")
         }
@@ -98,7 +113,7 @@ struct InfoBlockFuture: View {
 
 struct InfoBlock_Previews: PreviewProvider {
     static var previews: some View {
-        InfoBlock(title: "Temperature", info: "23", img: nil, tips: "tips")
+        InfoBlock(title: "Temperature", info: "23", img: UIImage(named: "yun"), tips: "tips")
             .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 100))
         //InfoBlockSmall(title1: "Wind", info1: "Wind",title2: "" img: nil)
          //   .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 100))

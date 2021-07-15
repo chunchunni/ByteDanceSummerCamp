@@ -16,7 +16,7 @@ struct currentWeatherView: View {
         VStack {
             List {
                 Group {
-                    InfoBlock(title: "天气", info: "\(returnInfo.data.wea)", img: nil, tips: nil)
+                    InfoBlock(title: "天气", info: "\(returnInfo.data.wea)", img: UIImage(named: returnInfo.data.wea_img), tips: nil)
                     InfoBlock(title: "实时温度", info: "\(returnInfo.data.tem)", img: nil, tips: nil)
                     InfoBlock(title: "温度范围", info: "\(returnInfo.data.tem2) ~ \(returnInfo.data.tem1)", img: nil, tips: nil)
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -37,11 +37,11 @@ struct currentWeatherView: View {
                     }
 
                     Group {
-                        InfoBlockFuture(day: returnInfo.data1.day, wea: returnInfo.data1.wea, tem1: returnInfo.data1.tem1, tem2: returnInfo.data1.tem2)
-                        InfoBlockFuture(day: returnInfo.data2.day, wea: returnInfo.data2.wea, tem1: returnInfo.data2.tem1, tem2: returnInfo.data2.tem2)
-                        InfoBlockFuture(day: returnInfo.data3.day, wea: returnInfo.data3.wea, tem1: returnInfo.data3.tem1, tem2: returnInfo.data3.tem2)
-                        InfoBlockFuture(day: returnInfo.data4.day, wea: returnInfo.data4.wea, tem1: returnInfo.data4.tem1, tem2: returnInfo.data4.tem2)
-                        InfoBlockFuture(day: returnInfo.data5.day, wea: returnInfo.data5.wea, tem1: returnInfo.data5.tem1, tem2: returnInfo.data5.tem2)
+                        InfoBlockFuture(day: returnInfo.data1.day, wea: returnInfo.data1.wea, tem1: returnInfo.data1.tem1, tem2: returnInfo.data1.tem2, img: UIImage(named: returnInfo.data1.wea_img))
+                        InfoBlockFuture(day: returnInfo.data2.day, wea: returnInfo.data2.wea, tem1: returnInfo.data2.tem1, tem2: returnInfo.data2.tem2, img: UIImage(named: returnInfo.data2.wea_img))
+                        InfoBlockFuture(day: returnInfo.data3.day, wea: returnInfo.data3.wea, tem1: returnInfo.data3.tem1, tem2: returnInfo.data3.tem2, img: UIImage(named: returnInfo.data3.wea_img))
+                        InfoBlockFuture(day: returnInfo.data4.day, wea: returnInfo.data4.wea, tem1: returnInfo.data4.tem1, tem2: returnInfo.data4.tem2, img: UIImage(named: returnInfo.data4.wea_img))
+                        InfoBlockFuture(day: returnInfo.data5.day, wea: returnInfo.data5.wea, tem1: returnInfo.data5.tem1, tem2: returnInfo.data5.tem2, img: UIImage(named: returnInfo.data5.wea_img))
                     }
                     
                     InfoBlock(title: "湿度", info: "\(returnInfo.data.humidity)", img: nil, tips: nil)
@@ -93,22 +93,27 @@ struct currentWeatherView: View {
             
             returnInfo.data1.day = json["data"][1]["day"].string ?? ""
             returnInfo.data1.wea = json["data"][1]["wea"].string ?? ""
+            returnInfo.data1.wea_img = json["data"][1]["wea_img"].string ?? ""
             returnInfo.data1.tem1 = json["data"][1]["tem1"].string ?? ""
             returnInfo.data1.tem2 = json["data"][1]["tem2"].string ?? ""
             returnInfo.data2.day = json["data"][2]["day"].string ?? ""
             returnInfo.data2.wea = json["data"][1]["wea"].string ?? ""
+            returnInfo.data2.wea_img = json["data"][2]["wea_img"].string ?? ""
             returnInfo.data2.tem1 = json["data"][2]["tem1"].string ?? ""
             returnInfo.data2.tem2 = json["data"][2]["tem2"].string ?? ""
             returnInfo.data3.day = json["data"][3]["day"].string ?? ""
             returnInfo.data3.wea = json["data"][1]["wea"].string ?? ""
+            returnInfo.data3.wea_img = json["data"][3]["wea_img"].string ?? ""
             returnInfo.data3.tem1 = json["data"][3]["tem1"].string ?? ""
             returnInfo.data3.tem2 = json["data"][3]["tem2"].string ?? ""
             returnInfo.data4.day = json["data"][4]["day"].string ?? ""
             returnInfo.data4.wea = json["data"][1]["wea"].string ?? ""
+            returnInfo.data4.wea_img = json["data"][4]["wea_img"].string ?? ""
             returnInfo.data4.tem1 = json["data"][4]["tem1"].string ?? ""
             returnInfo.data4.tem2 = json["data"][4]["tem2"].string ?? ""
             returnInfo.data5.day = json["data"][5]["day"].string ?? ""
             returnInfo.data5.wea = json["data"][1]["wea"].string ?? ""
+            returnInfo.data5.wea_img = json["data"][5]["wea_img"].string ?? ""
             returnInfo.data5.tem1 = json["data"][5]["tem1"].string ?? ""
             returnInfo.data5.tem2 = json["data"][5]["tem2"].string ?? ""
             
