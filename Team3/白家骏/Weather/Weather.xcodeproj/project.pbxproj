@@ -86,8 +86,8 @@
 				BFAF2C16268F170600D34778 /* Preview Content */,
 				BF84AA05269E99C000276D38 /* CityListView.swift */,
 				BFAF2C25268F333500D34778 /* currentWeatherView.swift */,
-				BFAF2C23268F332500D34778 /* weatherQualityView.swift */,
 				BF6BF79F2692EE52004BBF8B /* InfoBlocks.swift */,
+				BFAF2C23268F332500D34778 /* weatherQualityView.swift */,
 				BFAF2C20268F1DDD00D34778 /* AFNetworking-Brigding-Header.h */,
 				BFAF2C27268F3D1600D34778 /* returnDemo.json */,
 			);

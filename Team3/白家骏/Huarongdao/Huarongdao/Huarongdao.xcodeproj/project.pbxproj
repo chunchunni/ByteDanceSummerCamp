@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF84AA0D269EF84A00276D38 /* Procedure.m in Sources */ = {isa = PBXBuildFile; fileRef = BF84AA0C269EF84A00276D38 /* Procedure.m */; };
 		BF9E677C269690F7008CC91E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9E677B269690F7008CC91E /* AppDelegate.m */; };
 		BF9E677F269690F7008CC91E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9E677E269690F7008CC91E /* SceneDelegate.m */; };
 		BF9E6782269690F7008CC91E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9E6781269690F7008CC91E /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF84AA07269EF7E900276D38 /* Procedure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Procedure.h; sourceTree = "<group>"; };
+		BF84AA0C269EF84A00276D38 /* Procedure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Procedure.m; sourceTree = "<group>"; };
 		BF9E6777269690F7008CC91E /* Huarongdao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huarongdao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9E677A269690F7008CC91E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF9E677B269690F7008CC91E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 				BF9E6786269690FA008CC91E /* Assets.xcassets */,
 				BF9E6788269690FA008CC91E /* LaunchScreen.storyboard */,
 				BF9E678B269690FA008CC91E /* Info.plist */,
+				BF84AA07269EF7E900276D38 /* Procedure.h */,
+				BF84AA0C269EF84A00276D38 /* Procedure.m */,
 				BF9E678C269690FA008CC91E /* main.m */,
 				BF9E679826969160008CC91E /* Block.h */,
 				BF9E679626969154008CC91E /* Block.m */,
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9E6782269690F7008CC91E /* ViewController.m in Sources */,
+				BF84AA0D269EF84A00276D38 /* Procedure.m in Sources */,
 				BF9E677C269690F7008CC91E /* AppDelegate.m in Sources */,
 				BF9E678D269690FA008CC91E /* main.m in Sources */,
 				BF9E679726969154008CC91E /* Block.m in Sources */,

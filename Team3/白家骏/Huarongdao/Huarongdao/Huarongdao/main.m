@@ -8,8 +8,11 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "Block.h"
+#import "Procedure.h"
 
 int map[5][4];
+void printmap();
+void bfs();
 
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;
@@ -47,14 +50,33 @@ int main(int argc, char * argv[]) {
         [block8 initLocation];
         [block9 initLocation];
         
-        for(int i = 1; i <= 5; i++) {
-            for(int j = 1; j <= 4; j++) {
-                printf("%i", map[j][i]);
+        printmap();
+        
+        procedure *procedures = [procedure new];
+        int i = 0;
+        
+        while([block0 locationX] != 2 || [block0 locationY] != 5) {
+            if([block0 upMove]) {
+                [procedures writeTag:0 :i];
+                [procedures writeDir:0 :0];
+                i++;
             }
-            printf("\n");
         }
         
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+}
+
+void bfs() {
+    
+}
+
+void printmap() {
+    for(int i = 1; i <= 5; i++) {
+        for(int j = 1; j <= 4; j++) {
+            printf("%i", map[j][i]);
+        }
+        printf("\n");
+    }
 }
