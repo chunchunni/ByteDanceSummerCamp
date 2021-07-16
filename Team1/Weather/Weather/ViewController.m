@@ -2,7 +2,8 @@
 //  ViewController.m
 //  Weather
 //
-//  Created by Admin on 2021/7/15.
+//  Created by PURE on 2021/7/16.
+//  Copyright © 2021 PURE. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -15,13 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)getAFNetworking {
-    NSURL *url=[NSURL URLWithString:@"https://www.tianqiapi.com/free/day?appid=52253853&appsecret=EIq5erZY"];
-    NSURLRequest *request=[NSURLRequest requestWithURL:url
-                                           cachePolicy:0 timeoutInterval:10.0];
-    NSLog(@"%s",request.HTTPBody);
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
+
+
 @end
