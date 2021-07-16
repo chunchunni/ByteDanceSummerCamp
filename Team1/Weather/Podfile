@@ -1,0 +1,3 @@
+target "Weather" do
+pod "AFNetworking", "~>4.0"
+end
