@@ -15,10 +15,17 @@ struct currentWeatherView: View {
     var body: some View {
         VStack {
             List {
+                HStack {
+                    Spacer()
+                    titleInfoView(wea_img: returnInfo.data.wea_img, wea: returnInfo.data.wea, tem1: returnInfo.data.tem1, tem2: returnInfo.data.tem2, tem: returnInfo.data.tem)
+                    Spacer()
+                }
                 Group {
+                    /*
                     InfoBlock(title: "天气", info: "\(returnInfo.data.wea)", img: UIImage(named: returnInfo.data.wea_img), tips: nil)
                     InfoBlock(title: "实时温度", info: "\(returnInfo.data.tem)", img: nil, tips: nil)
                     InfoBlock(title: "温度范围", info: "\(returnInfo.data.tem2) ~ \(returnInfo.data.tem1)", img: nil, tips: nil)
+                    */
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             Group {
@@ -60,12 +67,10 @@ struct currentWeatherView: View {
         .onAppear(perform: {
             requestData(requestParas: requestParameters(city: cityName))
         })
-        //.navigationViewStyle(StackNavigationViewStyle())
     }
     
     func requestData(requestParas: requestParameters) {
         let manager = NetworkManager()
-        //var returnInfoGeneral = returnInfosGeneral()
         //manager.responseSerializer.acceptableContentTypes = NSSet(object: "text/html") as! Set<String>
         manager.request(requestType: .GET, urlString: "https://tianqiapi.com/api", parameters: ["appid": requestParas.appid as AnyObject, "appsecret": requestParas.appsecret as AnyObject, "version": requestParas.version as AnyObject, "city": requestParas.city as AnyObject]) { (data) in
             //print(data)

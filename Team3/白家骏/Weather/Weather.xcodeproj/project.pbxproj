@@ -14,7 +14,7 @@
 		BFAF2C13268F170500D34778 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF2C12268F170500D34778 /* ContentView.swift */; };
 		BFAF2C15268F170600D34778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFAF2C14268F170600D34778 /* Assets.xcassets */; };
 		BFAF2C18268F170600D34778 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFAF2C17268F170600D34778 /* Preview Assets.xcassets */; };
-		BFAF2C24268F332500D34778 /* weatherQualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF2C23268F332500D34778 /* weatherQualityView.swift */; };
+		BFAF2C24268F332500D34778 /* LocalIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF2C23268F332500D34778 /* LocalIndexView.swift */; };
 		BFAF2C26268F333500D34778 /* currentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAF2C25268F333500D34778 /* currentWeatherView.swift */; };
 		BFAF2C28268F3D1600D34778 /* returnDemo.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAF2C27268F3D1600D34778 /* returnDemo.json */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,7 @@
 		BFAF2C17268F170600D34778 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFAF2C19268F170600D34778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFAF2C20268F1DDD00D34778 /* AFNetworking-Brigding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-Brigding-Header.h"; sourceTree = "<group>"; };
-		BFAF2C23268F332500D34778 /* weatherQualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherQualityView.swift; sourceTree = "<group>"; };
+		BFAF2C23268F332500D34778 /* LocalIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalIndexView.swift; sourceTree = "<group>"; };
 		BFAF2C25268F333500D34778 /* currentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentWeatherView.swift; sourceTree = "<group>"; };
 		BFAF2C27268F3D1600D34778 /* returnDemo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = returnDemo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +87,7 @@
 				BF84AA05269E99C000276D38 /* CityListView.swift */,
 				BFAF2C25268F333500D34778 /* currentWeatherView.swift */,
 				BF6BF79F2692EE52004BBF8B /* InfoBlocks.swift */,
-				BFAF2C23268F332500D34778 /* weatherQualityView.swift */,
+				BFAF2C23268F332500D34778 /* LocalIndexView.swift */,
 				BFAF2C20268F1DDD00D34778 /* AFNetworking-Brigding-Header.h */,
 				BFAF2C27268F3D1600D34778 /* returnDemo.json */,
 			);
@@ -229,7 +229,7 @@
 				BF6BF7A02692EE52004BBF8B /* InfoBlocks.swift in Sources */,
 				BF84AA06269E99C000276D38 /* CityListView.swift in Sources */,
 				BFAF2C11268F170500D34778 /* WeatherApp.swift in Sources */,
-				BFAF2C24268F332500D34778 /* weatherQualityView.swift in Sources */,
+				BFAF2C24268F332500D34778 /* LocalIndexView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

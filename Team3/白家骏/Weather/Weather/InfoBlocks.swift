@@ -22,7 +22,7 @@ struct InfoBlock: View {
                 if img != nil {
                     Image(uiImage: img!)
                         .resizable()
-                        .frame(width: 16, height: 16, alignment: .center)
+                        .frame(width: 16, height: 15.36, alignment: .center)
                 }
                 Text(info)
                     .multilineTextAlignment(.leading)     
@@ -55,14 +55,12 @@ struct InfoBlockSmall: View {
                     .font(.title)
             }
             Spacer()
-            //.frame(width: UIScreen.main.bounds.width / 2)
             VStack {
                 Text(title2)
                     .padding(5)
                 Text(info2)
                     .font(.title)
             }
-            //.frame(width: UIScreen.main.bounds.width / 2)
         }
         .padding(10)
     }
@@ -79,7 +77,7 @@ struct InfoBlockHori: View {
             if wea_img != nil {
                 Image(uiImage: wea_img!)
                     .resizable()
-                    .frame(width: 40, height: 40, alignment: .center)
+                    .frame(width: 41.67, height: 40, alignment: .center)
                     .padding(10)
             }
             Text(tem)
@@ -103,7 +101,7 @@ struct InfoBlockFuture: View {
             if img != nil {
                 Image(uiImage: img!)
                     .resizable()
-                    .frame(width: 16, height: 16, alignment: .center)
+                    .frame(width: 16, height: 15.5, alignment: .center)
             }
             Spacer()
             Text("\(tem2) ~ \(tem1)")
@@ -111,11 +109,64 @@ struct InfoBlockFuture: View {
     }
 }
 
+struct localIndexView: View {
+    var desc: String
+    var level: String
+    var title: String
+    
+    var body: some View {
+        VStack {
+            VStack {
+                HStack {
+                    Text(title)
+                        .font(.caption)
+                    Spacer()
+                }
+                HStack {
+                    Text(level)
+                        .font(.title)
+                    Spacer()
+                }
+            }
+            .padding(2)
+            HStack {
+                Text(desc)
+                Spacer()
+            }
+            .padding(2)
+        }
+        .padding(10)
+    }
+}
+
+struct titleInfoView: View{
+    var wea_img: String
+    var wea: String
+    var tem1: String
+    var tem2: String
+    var tem: String
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Image(wea_img)
+                    .resizable()
+                    .frame(width: 125, height: 120, alignment: .center)
+                    .padding(5)
+                Text(tem)
+                    .font(.custom("Heiti SC", size: 68))
+            }
+            .padding(5)
+            Text(wea)
+            Text("\(tem2) ~ \(tem1)")
+        }
+        .padding(5)
+    }
+}
+
 struct InfoBlock_Previews: PreviewProvider {
     static var previews: some View {
         InfoBlock(title: "Temperature", info: "23", img: UIImage(named: "yun"), tips: "tips")
             .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 100))
-        //InfoBlockSmall(title1: "Wind", info1: "Wind",title2: "" img: nil)
-         //   .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 100))
     }
 }
