@@ -10,15 +10,18 @@ import SwiftyJSON
 
 struct CityListView: View {
     @State private var isAddItemViewPresented = false
-    @State private var cityNameList = ["北京", "西安", "成都"]
+    @State private var cityNameList = [String]()
     
     var body: some View {
         NavigationView {
             VStack {
-                List(cityNameList.indices, id: \.self) { index in
-                    NavigationLink(destination: currentWeatherView(cityName: cityNameList[index])) {
-                        CityListUnit(cityName: cityNameList[index])
+                List {
+                    ForEach(cityNameList.indices, id: \.self) { index in
+                        NavigationLink(destination: currentWeatherView(cityName: cityNameList[index])) {
+                            CityListUnit(cityName: cityNameList[index])
+                        }
                     }
+                    .onDelete(perform: deleteItem)
                 }
                 .navigationBarTitle("城市列表", displayMode: .automatic)
                 .navigationBarItems(trailing: Button(action: {isAddItemViewPresented = true}, label: {
@@ -27,9 +30,22 @@ struct CityListView: View {
                     AddItemView(isPresented: $isAddItemViewPresented, cityNameList: $cityNameList)
                 }))
             }
-           
-           
+            .onAppear(perform: fetchCityList)
         }
+    }
+    
+    func deleteItem(at offsets: IndexSet) {
+        if let first = offsets.first {
+            cityNameList.remove(at: first)
+            userCityList.setValue(cityNameList, forKey: defaultsKeys.cityList)
+            print("update city list - delete item, list.count = \(cityNameList.count)")
+        }
+    }
+    
+    func fetchCityList() {
+        var readCityList = userCityList.stringArray(forKey: defaultsKeys.cityList) ?? [String]()
+        cityNameList = readCityList
+        print("fetch city list, list.count = \(cityNameList.count)")
     }
 }
 
@@ -59,6 +75,9 @@ struct AddItemView: View {
                 if self.newCityName != "" {
                     cityNameList.append(newCityName)
                     newCityName = ""
+                    userCityList.removeObject(forKey: defaultsKeys.cityList)
+                    userCityList.setValue(cityNameList, forKey: defaultsKeys.cityList)
+                    print("update city list - add item, list.count = \(cityNameList.count)")
                 }
                 for item in cityNameList {
                     print(item)
@@ -92,14 +111,11 @@ struct CityListUnit: View {
     func requestInfoBrief(cityName: String) {
         let manager = NetworkManager()
         var requestParas = requestParameters(city: cityName)
-        //var returnInfo = returnInfosBrief()
         manager.request(requestType: .GET, urlString: "https://tianqiapi.com/api", parameters: ["appid": requestParas.appid as AnyObject, "appsecret": requestParas.appsecret as AnyObject, "version": requestParas.version as AnyObject, "city": requestParas.city as AnyObject]) { (data) in
             
             let json = try! JSON(data)
             self.wea = json["data"][0]["wea"].string ?? ""
             self.tem = json["data"][0]["tem"].string ?? ""
-            print(cityName)
-            print(tem)
         }
     }
 }

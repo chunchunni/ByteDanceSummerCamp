@@ -11,9 +11,15 @@ struct ContentView: View {
     var body: some View {
         TabView {
             CityListView()
-                .tabItem { Text("城市列表") }
-            weatherQualityView()
-                .tabItem { Text("空气质量") }
+                .tabItem {
+                    Text("城市列表")
+                    Image(systemName: "list.dash")
+                }
+            LocalIndexView()
+                .tabItem {
+                    Text("本地指数")
+                    Image(systemName: "building.2")
+                }
         }
     }
 }

@@ -97,12 +97,23 @@ class returnInfosBrief: ObservableObject {
     @Published var tem: String = ""
 }
 
+class indexInfo: ObservableObject {
+    @Published var cityName: String = ""
+    @Published var desc: String = ""
+    @Published var level: String = ""
+    @Published var title: String = ""
+}
 
+let userCityList = UserDefaults.standard
+
+struct defaultsKeys {
+    static let cityList = "cityList"
+}
 
 @main
 struct WeatherApp: App {
     init() {
-        //requestData(requestParas: requestParasDemo)
+
     }
     var body: some Scene {
         WindowGroup {
