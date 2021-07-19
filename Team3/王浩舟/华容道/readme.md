@@ -14,4 +14,4 @@
 
 部分一键完成过程中的动画演示：
 
-![Aaron Swartz](https://github.com/chunchunni/ByteDanceSummerCamp/blob/main/Team3/王浩舟/华容道/华容道运行演示.gif?raw=true)
+![demo](https://github.com/chunchunni/ByteDanceSummerCamp/blob/main/Team3/王浩舟/华容道/华容道运行演示.gif?raw=true)
