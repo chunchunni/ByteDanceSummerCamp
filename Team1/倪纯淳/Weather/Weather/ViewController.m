@@ -10,7 +10,6 @@
 #import "Weather.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
@@ -24,13 +23,20 @@
 - (IBAction)buttonPressed:(UIButton *)sender
 {
     NSString *plainText = @"HelloWorld";
-    _statusLabel.text = plainText;
+//_statusLabel.text = plainText;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)showWeather:(Weather *) model
+{
+    _statusLabelCity.text = model.cityName;
+    _statusLabelDate.text = model.updateTime;
+}
+
 
 //加载网络数据
 -(void)loadData
@@ -40,34 +46,24 @@
     NSURLRequest *request=[NSURLRequest requestWithURL:url
                                            cachePolicy:0 timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sharedSession];
+    Weather *model = [[Weather alloc]init];
     [[session dataTaskWithURL:url
             completionHandler:^(NSData *data,
                                 NSURLResponse *response,
                                 NSError *error) {
                 //将二进制数据转换为字典
                 NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-                Weather *model = [[Weather alloc]init];
                 model.cityName = result[@"city"];
                 model.updateTime = result[@"update_time"];
                 model.sevenDays = result[@"data"];
                 NSLog(@"%@ %@",model.cityName,model.updateTime);
-                /*
-                NSLog(@"%@市 时间%@ 天气%@ 天气ENG%@ 平均温度%@ 最高温度%@ 最低温度%@ 风向%@ 风力%@ 风速%@ 空气%@",
-                      result[@"city"],
-                      result[@"update_time"],
-                      result[@"wea"],
-                      result[@"wea_img"],
-                      result[@"tem"],
-                      result[@"tem_day"],
-                      result[@"tem_night"],
-                      result[@"win"],
-                      result[@"win_speed"],
-                      result[@"win_meter"],
-                      result[@"air"]
-                      );*/
+                [self showWeather:model];
+                
             }] resume];
     
 }
+
+
 
 @end
 
