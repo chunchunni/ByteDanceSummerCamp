@@ -12,7 +12,7 @@
 
 @property(nonatomic,strong)NSString *cityName;
 @property(nonatomic,strong)NSString *updateTime;
-@property(nonatomic,strong)NSDictionary *sevenDays;
+@property(nonatomic,strong)NSArray *sevenDays;
 
 
 @end

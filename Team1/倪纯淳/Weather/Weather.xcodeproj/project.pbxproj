@@ -20,6 +20,8 @@
 		CB1B6F0D26A1880A00E508E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B6F0C26A1880A00E508E9 /* main.m */; };
 		CB1B6F1726A1880A00E508E9 /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B6F1626A1880A00E508E9 /* WeatherTests.m */; };
 		CB1B6F2226A1880A00E508E9 /* WeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B6F2126A1880A00E508E9 /* WeatherUITests.m */; };
+		CB46B7EC26A6C1E4002ABE3B /* bg_sunny_day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB46B7E926A6C1E4002ABE3B /* bg_sunny_day.jpg */; };
+		CB46B7EE26A6C4A8002ABE3B /* bg_rain_day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB46B7ED26A6C4A8002ABE3B /* bg_rain_day.jpg */; };
 		E03279CAF7083BF54BE15082 /* libPods-Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B28EBD3784C7524BA0F419E9 /* libPods-Weather.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		CB1B6F1D26A1880A00E508E9 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1B6F2126A1880A00E508E9 /* WeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherUITests.m; sourceTree = "<group>"; };
 		CB1B6F2326A1880A00E508E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB46B7E926A6C1E4002ABE3B /* bg_sunny_day.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_sunny_day.jpg; path = ../../../../../Weather/Weather/Weather/images/bg_sunny_day.jpg; sourceTree = "<group>"; };
+		CB46B7ED26A6C4A8002ABE3B /* bg_rain_day.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_rain_day.jpg; path = ../../../../../Weather/Weather/Weather/images/bg_rain_day.jpg; sourceTree = "<group>"; };
 		E29296A8C422BEA0C2B44B8D /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +178,8 @@
 				CB1B6F0826A1880A00E508E9 /* LaunchScreen.storyboard */,
 				CB1B6F0B26A1880A00E508E9 /* Info.plist */,
 				CB1B6F0C26A1880A00E508E9 /* main.m */,
+				CB46B7ED26A6C4A8002ABE3B /* bg_rain_day.jpg */,
+				CB46B7E926A6C1E4002ABE3B /* bg_sunny_day.jpg */,
 				CB16540326A56C00007A3B93 /* Weather.h */,
 				CB16540426A56C00007A3B93 /* Weather.m */,
 			);
@@ -326,12 +332,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA6123326A1ADDB00A843ED /* Manifest.lock in Resources */,
+				CB46B7EC26A6C1E4002ABE3B /* bg_sunny_day.jpg in Resources */,
 				CB1B6F0A26A1880A00E508E9 /* LaunchScreen.storyboard in Resources */,
 				2CA6123526A1ADDB00A843ED /* AFNetworking in Resources */,
 				CB1B6F0726A1880A00E508E9 /* Assets.xcassets in Resources */,
 				2CA6123426A1ADDB00A843ED /* Headers in Resources */,
 				CB1B6F0526A1880900E508E9 /* Main.storyboard in Resources */,
 				2CA6123226A1ADDB00A843ED /* Target Support Files in Resources */,
+				CB46B7EE26A6C4A8002ABE3B /* bg_rain_day.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
