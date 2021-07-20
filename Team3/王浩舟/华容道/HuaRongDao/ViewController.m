@@ -299,7 +299,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[1];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[zf setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[zf setFrame:rect];} completion:nil];
                 break;
             }
             case 2:
@@ -328,7 +328,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[2];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[cc setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[cc setFrame:rect];} completion:nil];
                 break;
             }
             case 3:
@@ -357,7 +357,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[3];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[mc setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[mc setFrame:rect];} completion:nil];
                 break;
             }
             case 4:
@@ -386,7 +386,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[4];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[hz setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[hz setFrame:rect];} completion:nil];
                 break;
             }
             case 5:
@@ -415,7 +415,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[5];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[gy setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[gy setFrame:rect];} completion:nil];
                 break;
             }
             case 6:
@@ -444,7 +444,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[6];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[zy setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[zy setFrame:rect];} completion:nil];
                 break;
             }
             case 7:
@@ -473,7 +473,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[7];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[xb1 setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[xb1 setFrame:rect];} completion:nil];
                 break;
             }
             case 8:
@@ -502,7 +502,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[8];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[xb2 setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[xb2 setFrame:rect];} completion:nil];
                 break;
             }
             case 9:
@@ -531,7 +531,7 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[9];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[xb3 setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[xb3 setFrame:rect];} completion:nil];
                 break;
             }
             case 10:
@@ -560,12 +560,12 @@ bool finishing = false;
                     }
                 }
                 CGRect rect = Rect[10];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{[xb4 setFrame:rect];});
+                [UIView animateWithDuration:0.3 delay:delay+=0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{[xb4 setFrame:rect];} completion:nil];
                 break;
             }
         }
     }
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((delay += 0.3) * NSEC_PER_SEC)),dispatch_get_main_queue(),^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)),dispatch_get_main_queue(),^{
         [self showMessage:@"已经自动完成游戏！"];
         finishing = false;
         finishbutton.enabled = true;
