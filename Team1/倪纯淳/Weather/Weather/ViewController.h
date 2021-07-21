@@ -40,7 +40,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *statusLabelDay7wea;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabelDay7tem;
 
-- (IBAction) buttonPressed:(UIButton *)sender;
+
 - (void)loadData;
 
 @end
