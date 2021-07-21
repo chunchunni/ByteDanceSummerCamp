@@ -48,8 +48,8 @@
                 self.weather.wea = self.weather.temp_7[0][@"wea"];
                 self.weather.wea_next = self.weather.temp_7[1][@"wea"];
                 self.weather.wea_afternext = self.weather.temp_7[2][@"wea"];
-                self.weather.temp_next = self.weather.temp_7[1][@"tmp_day"];
-                self.weather.temp_afternext = self.weather.temp_7[2][@"tmp_day"];
+                self.weather.temp_next = self.weather.temp_7[1][@"tem_day"];
+                self.weather.temp_afternext = self.weather.temp_7[2][@"tem_day"];
                 
                 //显示
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -61,11 +61,14 @@
                     self.next2_wea.text = self.weather.wea_afternext;
                     self.next1_temp.text = self.weather.temp_next;
                     self.next2_temp.text = self.weather.temp_afternext;
+                    //NSLog(@"%@",self.weather.temp_7[2][@"tem_day"]);
                 });
             }] resume];
-    UIImageView* imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    imageView.image = [[UIImage imageNamed:@"background.png"] stretchableImageWithLeftCapWidth:left topCapHeight:top];
-    [self.view addSubview:imageView];
+    UIImage *image = [UIImage imageNamed:@"bg.jpg"];
+    
+    self.view.layer.contents = (id) image.CGImage;    // 如果需要背景透明加上下面这句
+    
+    self.view.layer.backgroundColor = [UIColor clearColor].CGColor;
 }
 - (void)processdata:(NSDictionary *)dict:(NSDictionary *)dict
 {
