@@ -11,6 +11,11 @@
 #import "Procedure.h"
 
 int map[5][4];
+struct path {
+    int obj[MAXN];
+    int dir[MAXN];
+};
+
 void printmap();
 void bfs();
 
@@ -50,17 +55,81 @@ int main(int argc, char * argv[]) {
         [block8 initLocation];
         [block9 initLocation];
         
+        NSArray *blocks = [NSArray arrayWithObjects: block0, block1, block2, block3, block4, block5, block6, block7, block8, block9, nil];
+        struct path mypath;
+        
         printmap();
         
         procedure *procedures = [procedure new];
-        int i = 0;
+        int k = 0;
+        bool isFounded = false;
+        bool flag = false;
         
-        while([block0 locationX] != 2 || [block0 locationY] != 5) {
-            if([block0 upMove]) {
-                [procedures writeTag:0 :i];
-                [procedures writeDir:0 :0];
-                i++;
+        while([blocks[0] locationX] != 2 || [blocks[0] locationY] != 5) {
+            for (int dirI = 0; dirI <= 3 && !isFounded; dirI++) {
+                for (int i = 0; i <= 9 && !isFounded; i++) {
+                    switch(dirI) {
+                        case 0: {
+                            if([blocks[i] upMove]) {
+                                [procedures writeTag:k :i];
+                                [procedures writeDir:k :dirI];
+                                NSLog(@"%i %i %i", [procedures tag: k], [procedures direction: k], [procedures returnSumSTeps]);
+                                k++;
+                                flag = true;
+                            }
+                            break;
+                        }
+                        case 1: {
+                            if([blocks[i] downMove]) {
+                                [procedures writeTag:k :i];
+                                [procedures writeDir:k :dirI];
+                                NSLog(@"%i %i", [procedures tag: k], [procedures direction: k]);
+                                k++;
+                                //flag = true;
+                            }
+                            break;
+                        }
+                        case 2: {
+                            if([blocks[i] downMove]) {
+                                [procedures writeTag:k :i];
+                                [procedures writeDir:k :dirI];
+                                NSLog(@"%i %i", [procedures tag: k], [procedures direction: k]);
+                                k++;
+                                flag = true;
+                            }
+                            break;
+                        }
+                        case 3: {
+                            if([blocks[i] rightMove]) {
+                                [procedures writeTag:k :i];
+                                [procedures writeDir:k :dirI];
+                                NSLog(@"%i %i", [procedures tag: k], [procedures direction: k]);
+                                k++;
+                                //flag = true;
+                            }
+                            break;
+                        }
+                    }
+                    
+                    
+                    if([blocks[0] locationX] == 2 && [blocks[0] locationY] == 5) {
+                        isFounded = true;
+                        break;
+                    }
+                    
+                    if (flag) {
+                        flag = false;
+                        continue;
+                    }
+                }
+                if (isFounded) {
+                    break;
+                }
             }
+        }
+        
+        for(int i = 0; i <= [procedures returnSumSTeps]; i++) {
+            printf("%d %d", [procedures tag: i], [procedures direction: i]);
         }
         
         appDelegateClassName = NSStringFromClass([AppDelegate class]);

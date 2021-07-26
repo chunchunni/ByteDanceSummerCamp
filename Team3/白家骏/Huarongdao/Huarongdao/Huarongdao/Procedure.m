@@ -11,6 +11,7 @@
 @implementation procedure {
     int tag[MAXN];
     int direction[MAXN];
+    int sumStep;
 }
 
 - (int) tag:(int)i {
@@ -23,10 +24,17 @@
 
 - (BOOL) writeDir:(int)i :(int) value {
     direction[i] = value;
+    sumStep++;
+    return true;
 }
 
 - (BOOL) writeTag:(int)i :(int)value {
     tag[i] = value;
+    return true;
+}
+
+- (int) returnSumSTeps {
+    return sumStep;
 }
 
 @end

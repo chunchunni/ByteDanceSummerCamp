@@ -14,5 +14,6 @@
 - (int) direction: (int) i;
 - (BOOL) writeTag: (int) i : (int) value;
 - (BOOL) writeDir: (int) i : (int) value;
+- (int) returnSumSTeps;
 
 @end
