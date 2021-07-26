@@ -759,7 +759,7 @@ bool finishing = false;
             }
             --loc[now][1];
             rect.origin.x -= baseHeight;
-            [swipe.view setFrame:rect];
+            [UIView animateWithDuration:0.3 animations:^{[swipe.view setFrame:rect];}];
             NSLog(@"Swipe Left!");
             break;
         }
@@ -777,7 +777,7 @@ bool finishing = false;
             }
             ++loc[now][1];
             rect.origin.x += baseHeight;
-            [swipe.view setFrame:rect];
+            [UIView animateWithDuration:0.3 animations:^{[swipe.view setFrame:rect];}];
             NSLog(@"Swipe Right!");
             break;
         }
@@ -795,7 +795,7 @@ bool finishing = false;
             }
             --loc[now][0];
             rect.origin.y -= baseHeight;
-            [swipe.view setFrame:rect];
+            [UIView animateWithDuration:0.3 animations:^{[swipe.view setFrame:rect];}];
             NSLog(@"Swipe Up!");
             break;
         }
@@ -813,7 +813,7 @@ bool finishing = false;
             }
             ++loc[now][0];
             rect.origin.y += baseHeight;
-            [swipe.view setFrame:rect];
+            [UIView animateWithDuration:0.3 animations:^{[swipe.view setFrame:rect];}];
             NSLog(@"Swipe Down!");
             break;
         }

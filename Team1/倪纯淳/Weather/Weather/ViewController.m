@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <CoreLocation/CoreLocation.h>
 #import "Weather.h"
 
 @interface ViewController ()
+
 @end
 
 @implementation ViewController
@@ -18,12 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self loadData];
-}
-
-- (IBAction)buttonPressed:(UIButton *)sender
-{
-    NSString *plainText = @"HelloWorld";
-//_statusLabel.text = plainText;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,8 +34,7 @@
 {
     //根据请求，加载网络数据
     NSURL *url=[NSURL URLWithString:@"https://www.tianqiapi.com/free/week?appid=52253853&appsecret=EIq5erZY"];
-    NSURLRequest *request=[NSURLRequest requestWithURL:url
-                                           cachePolicy:0 timeoutInterval:10.0];
+    //NSURLRequest *request=[NSURLRequest requestWithURL:url cachePolicy:0 timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sharedSession];
     Weather *model = [[Weather alloc]init];
     [[session dataTaskWithURL:url
@@ -85,9 +81,9 @@
                     
                     
                     
-                    UIImage *image = [UIImage imageNamed:@"bg_rain_day.jpg"];
+                    UIImage *image = [UIImage imageNamed:@"bg_normal.jpg"];
                     
-                    self.view.layer.contents = (id) image.CGImage;    // 如果需要背景透明加上下面这句
+                    self.view.layer.contents = (id) image.CGImage;// 如果需要背景透明加上下面这句
                     
                     self.view.layer.backgroundColor = [UIColor clearColor].CGColor;
                    
@@ -104,5 +100,6 @@
 /*
 {"cityid":"101270101","city":"\u6210\u90fd","update_time":"2021-07-19 16:05:04","data":[{"date":"2021-07-19","wea":"\u9635\u96e8\u8f6c\u5c0f\u96e8","wea_img":"yu","tem_day":"33","tem_night":"23","win":"\u65e0\u6301\u7eed\u98ce\u5411","win_speed":"<3\u7ea7"},{"date":"2021-07-20","wea":"\u9635\u96e8\u8f6c\u5c0f\u96e8","wea_img":"yu","tem_day":"32","tem_night":"23","win":"\u65e0\u6301\u7eed\u98ce\u5411","win_speed":"<3\u7ea7"},{"date":"2021-07-21","wea":"\u591a\u4e91\u8f6c\u5c0f\u96e8","wea_img":"yun","tem_day":"31","tem_night":"23","win":"\u65e0\u6301\u7eed\u98ce\u5411","win_speed":"<3\u7ea7"},{"date":"2021-07-22","wea":"\u9635\u96e8\u8f6c\u5c0f\u96e8","wea_img":"yu","tem_day":"31","tem_night":"23","win":"\u65e0\u6301\u7eed\u98ce\u5411","win_speed":"<3\u7ea7"},{"date":"2021-07-23","wea":"\u9635\u96e8\u8f6c\u5c0f\u96e8","wea_img":"yu","tem_day":"27","tem_night":"23","win":"\u65e0\u6301\u7eed\u98ce\u5411","win_speed":"<3\u7ea7"},{"date":"2021-07-24","wea":"\u9635\u96e8\u8f6c\u5c0f\u96e8","wea_img":"yu","tem_day":"30","tem_night":"23","win":"\u65e0\u6301\u7eed\u98ce\u5411","win_speed":"<3\u7ea7"},{"date":"2021-07-25","wea":"\u5c0f\u96e8\u8f6c\u6674","wea_img":"yu","tem_day":"33","tem_night":"24","win":"\u65e0\u6301\u7eed\u98ce\u5411","win_speed":"<3\u7ea7"}]}
 */
+
 @end
 
