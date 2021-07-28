@@ -6,6 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define SIZEUNIT 93.5
 
 @interface ViewController : UIViewController
 
@@ -21,6 +24,8 @@
 @property (strong, nonatomic) IBOutlet UIView *xb3;
 @property (strong, nonatomic) IBOutlet UIView *xb4;
 @property (strong, nonatomic) IBOutlet UIButton *finishbutton;
+@property (strong, nonatomic) IBOutlet UILabel *Title;
+@property (strong, nonatomic) IBOutlet UIImageView *backGroundImage;
 
 -(IBAction) clickfinish;
 

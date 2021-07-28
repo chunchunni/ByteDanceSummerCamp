@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF662B3C26AEC60E006F9FD1 /* Huarongdao.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Huarongdao.entitlements; sourceTree = "<group>"; };
 		BF84AA07269EF7E900276D38 /* Procedure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Procedure.h; sourceTree = "<group>"; };
 		BF84AA0C269EF84A00276D38 /* Procedure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Procedure.m; sourceTree = "<group>"; };
 		BF9E6777269690F7008CC91E /* Huarongdao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huarongdao.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +68,7 @@
 		BF9E6779269690F7008CC91E /* Huarongdao */ = {
 			isa = PBXGroup;
 			children = (
+				BF662B3C26AEC60E006F9FD1 /* Huarongdao.entitlements */,
 				BF9E677A269690F7008CC91E /* AppDelegate.h */,
 				BF9E677B269690F7008CC91E /* AppDelegate.m */,
 				BF9E677D269690F7008CC91E /* SceneDelegate.h */,
@@ -303,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Huarongdao/Huarongdao.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7XRJ79BCH;
 				INFOPLIST_FILE = Huarongdao/Info.plist;
@@ -312,6 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hakubill.Huarongdao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Huarongdao/Huarongdao.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7XRJ79BCH;
 				INFOPLIST_FILE = Huarongdao/Info.plist;
@@ -330,6 +335,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hakubill.Huarongdao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

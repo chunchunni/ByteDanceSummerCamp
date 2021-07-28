@@ -14,6 +14,7 @@
 @implementation ViewController
 
 @synthesize cc,hz,zf,mc,gy,zy,xb1,xb2,xb3,xb4,finishbutton,allview;
+@synthesize Title,backGroundImage;
 
 struct bfsmap
 {
@@ -43,6 +44,7 @@ int loc[11][4] = {
 };
 
 bool finishing = false;
+bool finished = false;
 
 -(IBAction) clickfinish
 {
@@ -568,6 +570,7 @@ bool finishing = false;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)),dispatch_get_main_queue(),^{
         [self showMessage:@"已经自动完成游戏！"];
         finishing = false;
+        finished = true;
         finishbutton.enabled = true;
     });
     
@@ -731,6 +734,27 @@ bool finishing = false;
     [xb4 addGestureRecognizer:swipeRight];
     [xb4 addGestureRecognizer:swipeUp];
     [xb4 addGestureRecognizer:swipeDown];
+    
+    //MARK: - Init Position
+    
+    const float centerWidth = SCREENWIDTH / 2;
+    const float centerHeight = SCREENHEIGHT / 2;
+    
+    finishbutton.center = CGPointMake(SCREENWIDTH / 2, SCREENHEIGHT / 15 * 14);
+    Title.center = CGPointMake(SCREENWIDTH / 2, SCREENHEIGHT / 10);
+    backGroundImage.center = CGPointMake(SCREENWIDTH / 2, SCREENHEIGHT / 2);
+    zf.center = CGPointMake(centerWidth - SIZEUNIT * 1.5, centerHeight - SIZEUNIT * 1.5);
+    cc.center = CGPointMake(centerWidth, centerHeight - SIZEUNIT * 1.5);
+    mc.center = CGPointMake(centerWidth + SIZEUNIT * 1.5, centerHeight - SIZEUNIT * 1.5);
+    hz.center = CGPointMake(centerWidth - SIZEUNIT * 1.5, centerHeight + SIZEUNIT * 0.5);
+    gy.center = CGPointMake(centerWidth, centerHeight + SIZEUNIT);
+    zy.center = CGPointMake(centerWidth + SIZEUNIT * 1.5, centerHeight + SIZEUNIT * 0.5);
+    xb1.center = CGPointMake(centerWidth - SIZEUNIT * 1.5, centerHeight + SIZEUNIT * 2);
+    xb2.center = CGPointMake(centerWidth - SIZEUNIT * 0.5, centerHeight + SIZEUNIT * 2);
+    xb3.center = CGPointMake(centerWidth + SIZEUNIT * 0.5, centerHeight + SIZEUNIT * 2);
+    xb4.center = CGPointMake(centerWidth + SIZEUNIT * 1.5, centerHeight + SIZEUNIT * 2);
+    
+    
 }
 
 - (void)handleSwipe:(UISwipeGestureRecognizer *)swipe {
@@ -820,12 +844,20 @@ bool finishing = false;
         default:
             NSLog(@"unrecognized swipe gesture!");
     }
-    if(loc[2][0] == 3 && loc[2][1] == 1) {
+    
+    if(loc[2][0] == 3 && loc[2][1] == 1 && !finished) {
         if(finishing)
         {
             [self showMessage:@"已经自动完成游戏！"];
             finishing = false;
-        } else [self showMessage: @"恭喜您已经成功完成了游戏!"];
+            finished = true;
+        } else {
+            [self showMessage: @"恭喜您已经成功完成了游戏!"];
+            finished = true;
+        }
+    }
+    else {
+        finished = false;
     }
 }
 
